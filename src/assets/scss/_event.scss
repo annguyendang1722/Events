@@ -1,0 +1,152 @@
+.event {
+	&--tablist {
+		padding-right: 24px;
+		padding-left: 24px;
+		padding-top: 30px;
+		background-color: #f9f9fb;
+
+		.event {
+			&__vertical {
+				.event {
+					&__card {
+						display: flex;
+					}
+
+					&__img {
+						max-width: 100px;
+						flex-basis: 100px;
+						height: 100px !important;
+					}
+
+					.MuiTypography-h3 {
+						font-size: 15px;
+					}
+
+					&__content {
+						flex: 1;
+						padding-left: 18px;
+					}
+
+					&__datetext {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						margin-top: 0px;
+					}
+
+					&__inconbox {
+						padding-top: 0px;
+						padding-bottom: 0px;
+					}
+
+				}
+
+			}
+
+			&__blog {
+				padding-left: 0px;
+			}
+
+			&__card {
+				box-shadow: 0px 10px 35px rgba(111, 126, 201, 0.12);
+				border-radius: 14px;
+				margin-bottom: 16px;
+				padding: 9px;
+			}
+
+			&__img {
+				height: 120px;
+			}
+
+			&__numbericonbox {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			&__inconbox {
+				color: rgba(235, 87, 87, 1);
+			}
+
+			&__location {
+				margin-bottom: 10px;
+				margin-top: 0px;
+			}
+
+			&__datetext {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 19px;
+				text-transform: uppercase;
+				color: #5669FF;
+				margin-top: 12px;
+			}
+
+			&__title {
+				padding: 8px 0px;
+			}
+
+			&__tabsname {
+				.MuiTabs-flexContainer {
+					justify-content: center;
+					background: rgba(0, 0, 0, 0.0287096);
+					border-radius: 100px;
+					padding: 5px;
+				}
+
+				.MuiTabs-indicator {
+					background-color: transparent;
+				}
+
+				button {
+					max-width: 50%;
+					flex-basis: 50%;
+					font-style: italic;
+					font-weight: 100;
+					font-size: 15px !important;
+					text-transform: initial;
+					padding: 5px 5px;
+					min-height: 35px;
+
+					&.Mui-selected {
+						box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+						border-radius: 100px !important;
+						color: #5669FF;
+						background: #FFFFFF;
+					}
+
+				}
+
+			}
+
+		}
+
+		.layouttextbutton {
+			padding-right: 0px;
+
+			&__text {
+				font-size: 24px;
+				display: flex;
+				align-items: center;
+
+				svg {
+					margin-right: 10px;
+					font-size: 20px;
+				}
+
+			}
+
+			&__button {
+				svg {
+					font-size: 20px;
+					color: black;
+				}
+
+			}
+
+		}
+
+	}
+
+}

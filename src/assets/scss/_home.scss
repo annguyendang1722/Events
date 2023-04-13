@@ -73,6 +73,12 @@
   }
 
   &__listimg {
+   
+
+    li {
+      margin-bottom: 0px;
+    }
+
     img {
       border-radius: 100%;
     }
@@ -118,6 +124,7 @@
   &__location {
     display: flex;
     align-items: center;
+    margin-top:10px;
 
     span, em {
       font-size: 13px !important;

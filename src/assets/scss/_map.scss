@@ -1,22 +1,22 @@
-.map 
-{
+.map {
     padding-top: 0px;
     position: relative;
-    iframe
-    {
+
+    iframe {
         border-radius: 48px 48px 0px 0px;
         margin-left: -1px;
         margin-top: -1px;
     }
-   
-    &_search
-    {
+
+    &_search {
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
-        input 
-        {
+
+        input {
             box-shadow: unset !important;
         }
+
     }
+
 }
