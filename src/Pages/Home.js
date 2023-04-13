@@ -5,14 +5,14 @@ import Banner from "../Components/Home/Banner/banner";
 import Listbutton from "../Components/Home/Listbutton/listbutton";
 import Footerhome from "../Components/Home/Layout/footerhome";
 import Headerhome from "../Components/Home/Layout/headerhome";
-
+// import Headerhome from "../Components/Home/Layout/headerhome";
 
 
 
 const Home = () => {
   return (
     <Container maxWidth="sm">
-  
+       {/* <Headerhome /> */}
       <Headerhome />
       <Listbutton />
       <Events />

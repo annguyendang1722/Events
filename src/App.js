@@ -1,12 +1,9 @@
 import React from "react";
-// import { Route, Switch, Redirect } from "react-router-dom";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import Header from "./Components/Header";
-
 import Home from "./Pages/Home";
 import Intro from "./Pages/Intro";
-// import DrawerNavigate from "./Pages/MenuPage";
+import TabList from "./Pages/TabList";
 
 
 
@@ -25,11 +22,14 @@ const router = createBrowserRouter([
 export default function App() {
   return (
     <>
-      {/* <Header /> */}
+  
       <Routes>
         <Route index element={<Home />} />
-        {/* <Route path="menupage"  element={<DrawerNavigate />} /> */}
+       
         <Route path='intro' element={<Intro />} />
+        <Route path='tabpage' element={<TabList />} />
+
+        
         
 
       </Routes>
