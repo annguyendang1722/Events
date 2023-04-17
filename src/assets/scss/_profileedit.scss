@@ -1,0 +1,111 @@
+.profiletitle 
+{
+    background-color: white;
+}
+
+.listbutton
+{
+    &--profile
+    {
+       height: auto;  
+       display: flex;
+       flex-wrap: wrap;
+    } 
+}
+
+.profileedit
+{
+    &__avatar
+    {
+        display: flex;
+    justify-content: center;
+    }
+
+    &__avatarmain
+    {
+        width: 98px !important;
+        height: 98px!important;
+        object-fit: cover;
+    }
+
+  &__aboutus
+  {
+    color: black;
+    h3 
+    {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 34px; color: black;
+    }
+  }
+
+  &__des 
+  {
+    font-style: italic;
+font-weight: 100;
+font-size: 16px;
+line-height: 25px;
+  }
+
+    &__itemform
+    {
+     
+        width: 100%  !important;
+
+
+        .MuiOutlinedInput-root 
+        {
+            border-radius: 12px;
+        }
+        
+    }
+
+    &__form 
+    {
+        padding: 0px 20px;
+        label 
+        {
+            color: #747688 !important;
+            font-weight: 100;
+            font-size: 14px;
+            position: unset;
+            left: 0;
+            margin-left: -15px !important;
+            margin-bottom: 20px !important;
+        }
+
+        input 
+        {
+            box-shadow: unset;
+            width: 100% !important;
+            height: 60px;color: #040415;
+            padding-left: 16px;
+            font-style: italic;
+            border-radius: 12px;
+        }
+
+        button 
+        {
+            background: #5669FF;
+            width: 270px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 6px;
+            box-shadow: 0px 10px 35px rgba(111, 126, 201, 0.25);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 17px;
+            padding: 13px 20px;
+            .MuiButton-endIcon  
+            {
+              
+                position: absolute;
+                right: 10px;
+                background: #3D56F0;
+                border-radius: 100%;
+                padding: 3px;
+            }
+        }
+    }
+   
+}
