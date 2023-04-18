@@ -57,20 +57,20 @@ const Intro = () => {
       >
         <SwiperSlide>
           <Box className="intro__box">
-            <div className="intro__inner"><p>Khám phá các sự kiện sắp tới và sự kiện gần nhất</p>
-            <em>tận hưởng sự tiện lợi và nhanh chóng khi tham gia sự kiện</em></div>
+            <Box className="intro__inner"><p>Khám phá các sự kiện sắp tới và sự kiện gần nhất</p>
+            <em>tận hưởng sự tiện lợi và nhanh chóng khi tham gia sự kiện</em></Box>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="intro__box">
-            <div className="intro__inner"><p>Tra cứu thêm các sự kiện hoặc hoạt động gần đó bằng bản đồ</p>
-            <em>sử dụng dịch vụ map để kiềm kiếm di chuyển đến sự kiện của bạn</em></div>
+            <Box className="intro__inner"><p>Tra cứu thêm các sự kiện hoặc hoạt động gần đó bằng bản đồ</p>
+            <em>sử dụng dịch vụ map để kiềm kiếm di chuyển đến sự kiện của bạn</em></Box>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className="intro__box">
-            <div className="intro__inner"><p>Khám phá các sự kiện sắp tới và sự kiện gần nhất</p>
-            <em>tận hưởng sự tiện lợi và nhanh chóng khi tham gia sự kiện</em></div>
+            <Box className="intro__inner"><p>Khám phá các sự kiện sắp tới và sự kiện gần nhất</p>
+            <em>tận hưởng sự tiện lợi và nhanh chóng khi tham gia sự kiện</em></Box>
           </Box>
         </SwiperSlide>
       </Swiper>

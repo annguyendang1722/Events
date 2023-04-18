@@ -7,7 +7,7 @@
 @import "mapview";
 @import "profileedit";
 @import "login";
-
+@import "selectlocation";
 
 html, body {
   margin: 0;
@@ -259,7 +259,12 @@ a, span, div, p {
   padding-right: 0px !important;
   padding-bottom: 0px !important;
   // border: 1px solid black;
-  max-width: 475px;
+
+  @media(min-width:991px)
+  {
+    max-width: 376px !important;
+  }
+  max-width: 100%  !important;
   position: relative;
   overflow: hidden;
 }

@@ -9,7 +9,7 @@ import "swiper/css";
 export default function Listbutton() {
   return (
     <Box className="listbutton">
-      <Swiper slidesPerView={"auto"} spaceBetween={10} className="mySwiper">
+      <Swiper slidesPerView={"auto"} spaceBetween={11} loop  className="mySwiper">
         <SwiperSlide className="listbutton__itemslide">
           <Box className="listbutton__slide">
             <span>

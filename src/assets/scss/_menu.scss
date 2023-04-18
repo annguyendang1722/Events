@@ -47,9 +47,14 @@
     }
 
     &__topright {
-        max-width: 10%;
-        flex-basis: 10%;
-        text-align: right;
+        max-width: 30px;
+        flex-basis: 30px;
+        border-radius: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
     }
 
     &__search {
@@ -58,9 +63,11 @@
         justify-content: space-between;
         align-items: center;
         padding-right: 15px;
+        margin-top: 10px;
 
         .line {
             border-color: rgba(121, 116, 231, 1);
+            height: 20px;
         }
 
         form {
@@ -69,11 +76,12 @@
 
             input {
                 &::placeholder {
-                    // color: rgba(121, 116, 231, 1);
+                   font-weight: 100;
                     font-style: italic;
                 }
 
                 color: white;
+                box-shadow: unset;
 
                 &:focus {
                     box-shadow: unset;
@@ -85,6 +93,8 @@
 
         .iconsearch {
             color: white;
+            padding-left: 0px;
+            padding-right: 0px;
 
             svg {
                 font-size: 20px;
@@ -94,11 +104,19 @@
 
     }
 
+    &__address
+    {
+        font-size: 13px;
+        text-align: center;
+        margin-left: -14px;
+    }
+
     &__selectaddress {
         color: white !important;
-        // opacity: 0.7;
+        padding: 0px !important;
         font-style: italic;
         font-weight: 100 !important;
+        font-size: 12px !important;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -106,12 +124,19 @@
         width: 100%;
         padding: 0px;
         text-transform: initial !important;
+        span 
+        {
+            color: #FFFFFF;
+
+opacity: 0.7;
+        }
 
         .MuiButton-endIcon {
             display: unset;
             margin-right: 0px !important;
             margin-left: 0px !important;
             opacity: 1 !important;
+            line-height: 0;
         }
 
     }
@@ -157,19 +182,29 @@
     }
 
     &__searchright {
-        background: rgba(93, 86, 243, 1);
+        background: rgb(93, 86, 243);
         border-radius: 50px;
         padding: 5px 5px;
+        flex: 1;
+        display: flex;
+        align-items: center;background: rgb(93, 86, 243);
+    border-radius: 50px;
+    padding: 5px 5px;
+    flex: 1;
+    display: flex;
+    align-items: center;
 
         span:last-child {
             font-style: italic;
+            font-size: 12px;
+            margin-left: 5px;
         }
 
     }
 
     &__searchleft {
-        max-width: 80%;
-        flex-basis: 80%;
+        max-width: 77%;
+        flex-basis: 77%;
     }
 
     &__home {

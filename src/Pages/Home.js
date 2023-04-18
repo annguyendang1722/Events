@@ -11,7 +11,7 @@ import Headerhome from "../Components/Home/Layout/headerhome";
 
 const Home = () => {
   return (
-    <Container maxWidth="sm">
+    <Container className="homepage" maxWidth="sm">
        {/* <Headerhome /> */}
       <Headerhome />
       <Listbutton />

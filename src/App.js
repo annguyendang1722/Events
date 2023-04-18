@@ -10,6 +10,9 @@ import ProfileEdit from "./Pages/ProfileEdit";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import SwitchLayout from "./Pages/Switch";
+import Verification from "./Pages/Verification";
+import ResetPassword from "./Pages/ResetPassword";
+import SelectLocation from "./Pages/SelectLocation";
 
 import "./assets/css/styles.css";
 
@@ -34,6 +37,11 @@ export default function App() {
         <Route path='profileedit' element={<ProfileEdit />} />   
         <Route path='login' element={<Login />} />   
         <Route path='signup' element={<SignUp />} />   
+        <Route path='verification' element={<Verification />} />   
+        <Route path='resetpassword' element={<ResetPassword />} />  
+        <Route path='selectlocation' element={<SelectLocation />} />  
+        
+        
         <Route path='switch' element={<SwitchLayout />} />   
         
 

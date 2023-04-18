@@ -24,9 +24,9 @@ const SelectAddress = () => {
   return (
     <>
       <Button className="header__selectaddress" variant="text" endIcon={<ArrowDropDownIcon />} onClick={handleClickOpen}>
-          Địa điểm hiện tại
+          <span>Địa điểm hiện tại</span>
       </Button>
-      <Box>Hà Đông, Hà Nội</Box>
+      <Box className="header__address">Hà Đông, Hà Nội</Box>
       <Dialog className="header__dialog" open={open} onClose={handleClose}>
           <img src="img/address.png"/>
         <DialogTitle className="header__dialogtitle">Dịch vụ định vị</DialogTitle>
