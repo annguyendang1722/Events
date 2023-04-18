@@ -255,8 +255,10 @@
           box-shadow: unset;
 }
 .event__card .MuiTypography-h3 {
+  color: black;
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 0px;
 }
 
 .listbutton {

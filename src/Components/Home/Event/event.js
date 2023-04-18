@@ -52,7 +52,7 @@ export default function Events() {
               title="green iguana"
             />
             <CardContent className="event__title">
-              <Typography gutterBottom variant="h3" component="Box">
+              <Typography gutterBottom variant="h3">
                 International Band Mu...
               </Typography>
             </CardContent>
@@ -98,7 +98,7 @@ export default function Events() {
               title="green iguana"
             />
             <CardContent className="event__title">
-              <Typography gutterBottom variant="h3" component="Box">
+              <Typography gutterBottom variant="h3">
                 Jo Malone London’s Mo..
               </Typography>
             </CardContent>
@@ -146,7 +146,7 @@ export default function Events() {
               title="green iguana"
             />
             <CardContent className="event__title">
-              <Typography gutterBottom variant="h3" component="Box">
+              <Typography gutterBottom variant="h3">
                 International Band Mu...
               </Typography>
             </CardContent>
@@ -192,7 +192,7 @@ export default function Events() {
               title="green iguana"
             />
             <CardContent className="event__title">
-              <Typography gutterBottom variant="h3" component="Box">
+              <Typography gutterBottom variant="h3">
                 Jo Malone London’s Mo..
               </Typography>
             </CardContent>
@@ -240,7 +240,7 @@ export default function Events() {
               title="green iguana"
             />
             <CardContent className="event__title">
-              <Typography gutterBottom variant="h3" component="Box">
+              <Typography gutterBottom variant="h3">
                 International Band Mu...
               </Typography>
             </CardContent>
@@ -286,7 +286,7 @@ export default function Events() {
               title="green iguana"
             />
             <CardContent className="event__title">
-              <Typography gutterBottom variant="h3" component="Box">
+              <Typography gutterBottom variant="h3">
                 Jo Malone London’s Mo..
               </Typography>
             </CardContent>
