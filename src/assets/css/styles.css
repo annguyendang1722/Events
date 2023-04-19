@@ -108,11 +108,6 @@
 .homepage {
   background-color: #f9f9fb;
 }
-@media (max-width: 845px) {
-  .homepage {
-    height: 100vh;
-  }
-}
 
 .layouttextbutton {
   display: -webkit-box;
