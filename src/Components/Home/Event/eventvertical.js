@@ -34,7 +34,7 @@ export default function EventVertical() {
                 <BookmarkIcon></BookmarkIcon>
               </Box></Box>
               <CardContent className="event__title">
-                <Typography gutterBottom variant="h3" component="Box">
+                <Typography gutterBottom variant="h3">
                   Jo Malone London’s Mother’s Day Presents
                 </Typography>
               </CardContent>
@@ -58,7 +58,7 @@ export default function EventVertical() {
                 <BookmarkIcon></BookmarkIcon>
               </Box></Box>
               <CardContent className="event__title">
-                <Typography gutterBottom variant="h3" component="Box">
+                <Typography gutterBottom variant="h3">
                   Jo Malone London’s Mother’s Day Presents
                 </Typography>
               </CardContent>
@@ -81,7 +81,7 @@ export default function EventVertical() {
                 <BookmarkIcon></BookmarkIcon>
               </Box></Box>
               <CardContent className="event__title">
-                <Typography gutterBottom variant="h3" component="Box">
+                <Typography gutterBottom variant="h3">
                   Jo Malone London’s Mother’s Day Presents
                 </Typography>
               </CardContent>
@@ -104,7 +104,7 @@ export default function EventVertical() {
                 <BookmarkIcon></BookmarkIcon>
               </Box></Box>
               <CardContent className="event__title">
-                <Typography gutterBottom variant="h3" component="Box">
+                <Typography gutterBottom variant="h3">
                   Jo Malone London’s Mother’s Day Presents
                 </Typography>
               </CardContent>
@@ -128,7 +128,7 @@ export default function EventVertical() {
                 <BookmarkIcon></BookmarkIcon>
               </Box></Box>
               <CardContent className="event__title">
-                <Typography gutterBottom variant="h3" component="Box">
+                <Typography gutterBottom variant="h3">
                   Jo Malone London’s Mother’s Day Presents
                 </Typography>
               </CardContent>
@@ -151,7 +151,7 @@ export default function EventVertical() {
                 <BookmarkIcon></BookmarkIcon>
               </Box></Box>
               <CardContent className="event__title">
-                <Typography gutterBottom variant="h3" component="Box">
+                <Typography gutterBottom variant="h3">
                   Jo Malone London’s Mother’s Day Presents
                 </Typography>
               </CardContent>
