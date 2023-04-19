@@ -431,6 +431,14 @@
   width: 100%;
   z-index: 9999;
 }
+@media (min-width: 1024px) {
+  .footerhome__menu {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 376px !important;
+    left: 50%;
+  }
+}
 .footerhome__item {
   -webkit-transition: unset !important;
   transition: unset !important;
