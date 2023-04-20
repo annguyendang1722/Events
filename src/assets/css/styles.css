@@ -107,6 +107,7 @@
 
 .homepage {
   background-color: #f9f9fb;
+  padding-bottom: 70px !important;
 }
 
 .layouttextbutton {
@@ -148,6 +149,12 @@
   padding-left: 24px;
   padding-top: 20px;
   background-color: #f9f9fb;
+}
+.event__verticalhome {
+  padding-top: 0px !important;
+}
+.event__verticalhome .event__blog {
+  padding-top: 10px;
 }
 .event__title {
   padding-left: 0px !important;
@@ -426,7 +433,7 @@
   width: 100%;
   z-index: 9999;
 }
-@media (min-width: 1024px) {
+@media (min-width: 598px) {
   .footerhome__menu {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -990,6 +997,62 @@
   border-radius: 100%;
   padding: 3px;
 }
+.profileedit__listbutton {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 21px;
+}
+.profileedit__listbutton button {
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 13px 30px;
+  font-size: 16px;
+  text-transform: inherit;
+}
+.profileedit__listbutton button:nth-child(1) {
+  background: #5669FF;
+}
+.profileedit__listbutton button:nth-child(2) {
+  border: 1.5px solid #5669FF;
+  color: #5669FF;
+}
+
+.profileedit__numberperson {
+  position: relative;
+  overflow: hidden;
+  color: #120D26;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+.profileedit__numberperson::after {
+  content: "";
+  height: 30px;
+  width: 1px;
+  background-color: #DDDDDD;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.profileedit__numberpersonitem {
+  padding: 0px 10px;
+}
+.profileedit__person {
+  color: #747688;
+  font-style: italic;
+  font-weight: 100;
+  margin-top: 5px;
+}
 
 .login__avatar {
   -webkit-box-orient: vertical;
@@ -1429,12 +1492,11 @@ a, span, div, p {
 .MuiContainer-root {
   padding-left: 0px !important;
   padding-right: 0px !important;
-  padding-bottom: 0px !important;
   max-width: 100% !important;
   position: relative;
   overflow: hidden;
 }
-@media (min-width: 991px) {
+@media (min-width: 598px) {
   .MuiContainer-root {
     max-width: 376px !important;
   }

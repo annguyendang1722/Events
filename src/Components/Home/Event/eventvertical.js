@@ -18,8 +18,8 @@ import AvatarGroup from "@mui/material/AvatarGroup";
 export default function EventVertical() {
 
   return (
-    <Box className="event--tablist">
-      <Box className="event__vertical">
+    <Box className="event--tablist event__verticalhome">
+      <Box className="event__vertical  event__verticalsearch">
     
         <Box className="event event__blog">
           <Card className="event__card">

@@ -5,6 +5,7 @@
 .homepage 
 {
   background-color: #f9f9fb;
+  padding-bottom: 70px !important;
   // @media(max-width:845px)
   // {
   //   height: 100vh;
@@ -49,6 +50,15 @@
   padding-left: 24px;
   padding-top: 20px;
   background-color: #f9f9fb;
+
+  &__verticalhome
+  {
+     padding-top: 0px !important;
+     .event__blog  
+     {
+      padding-top: 10px;
+     }
+  }
 
   &__title {
     padding-left: 0px !important;
@@ -349,7 +359,7 @@
     bottom: 0;
     width: 100%;
     z-index: 9999;
-    @media(min-width:1024px)
+    @media(min-width:598px)
     {
       transform: translateX(-50%);
       width: 376px !important;

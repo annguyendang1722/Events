@@ -7,12 +7,19 @@ import TabList from "./Pages/TabList";
 import MapView from "./Pages/MapView";
 import Profile from "./Pages/Profile";
 import ProfileEdit from "./Pages/ProfileEdit";
+
+import ProfileAbout from "./Pages/ProfileAbout";
+import ProfileEvent from "./Pages/ProfileEvent";
+import ProfileReview from "./Pages/ProfileReview";
+
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import SwitchLayout from "./Pages/Switch";
 import Verification from "./Pages/Verification";
 import ResetPassword from "./Pages/ResetPassword";
 import SelectLocation from "./Pages/SelectLocation";
+import SearchPage from "./Pages/SearchPage";
+
 
 import "./assets/css/styles.css";
 
@@ -35,13 +42,19 @@ export default function App() {
         <Route path='mapview' element={<MapView />} />
         <Route path='profile' element={<Profile />} />
         <Route path='profileedit' element={<ProfileEdit />} />   
+
+        <Route path='profileabout' element={<ProfileAbout />} /> 
+        <Route path='profileevent' element={<ProfileEvent />} /> 
+        <Route path='profilereview' element={<ProfileReview />} /> 
+
+
         <Route path='login' element={<Login />} />   
         <Route path='signup' element={<SignUp />} />   
         <Route path='verification' element={<Verification />} />   
         <Route path='resetpassword' element={<ResetPassword />} />  
         <Route path='selectlocation' element={<SelectLocation />} />  
         
-        
+        <Route path='searchpage' element={<SearchPage />} />       
         <Route path='switch' element={<SwitchLayout />} />   
         
 
