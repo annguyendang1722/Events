@@ -1,0 +1,103 @@
+.selectinterest {
+  padding-top: 50px;
+  padding-left: 23px;
+  padding-right: 20px;
+  position: relative;
+  &__title {
+    font-weight: 700 !important;
+    font-size: 32px !important;
+    line-height: 35px !important;
+    color: #120d26 !important;
+    margin-bottom: 27px !important;
+  }
+
+  &__subtitle {
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    line-height: 20px !important;
+    color: #747688 !important;
+    margin-bottom: 28px !important;
+    display: flex;
+  }
+
+  &__titleicon
+  {
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 17px;
+    color: black!important;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px !important;
+    svg 
+    {
+      margin-right: 12px !important;
+    }
+  }
+
+  &__listbutton {
+    height:auto !important;
+    flex-wrap: wrap!important;
+    justify-content: flex-start!important;
+    margin-bottom: 29px !important;
+    button {
+      background: #ffffff;
+      box-shadow: 0px 2.14512px 4.29025px rgba(173, 175, 187, 0.3);
+      border-radius: 107.256px !important;
+      padding: 7px 15px;
+      flex: initial !important;
+      margin: 6px 0px;
+      margin-right: 14px;
+    
+      span:nth-child(1) {
+        color: #120d26 !important;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 16.6136px !important;
+        opacity: 1 !important;
+      }
+    }
+
+    .Mui-selected {
+      background: #5669ff;
+      span:nth-child(2) {
+            display: none;
+      }
+
+      span:nth-child(1) {
+        font-size: 17px;
+        color: white !important;
+      }
+    }
+  }
+
+  &__submit
+  {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 35px;
+    button 
+    {
+      background: #5669FF;
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 10px 35px rgba(111, 126, 201, 0.25);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    padding: 13px 20px;
+    }
+
+    .MuiButton-endIcon {
+      position: absolute;
+      right: 10px;
+      background: #3D56F0;
+      border-radius: 100%;
+      padding: 3px;
+  }
+
+  }
+}

@@ -2,17 +2,11 @@ import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-
-import RestoreIcon from '@mui/icons-material/Restore';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PersonIcon from '@mui/icons-material/Person';
 import Box from '@mui/material/Box';
 import SvgIcon from '@mui/material/SvgIcon';
 
-
-
-import Compass from './img/compass.svg';
 
 export default function Footerhome() {
   const [value, setValue] = React.useState(0);

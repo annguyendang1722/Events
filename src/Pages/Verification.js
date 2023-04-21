@@ -47,7 +47,7 @@ export default function Verification() {
           </FormControl>
 
           <FormControl className="profileedit__itemform loginform__button">
-            <Button variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
+            <Button className="button" variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
               Tiếp tục
             </Button>
           </FormControl>

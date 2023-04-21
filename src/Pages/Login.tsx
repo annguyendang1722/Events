@@ -4,49 +4,55 @@ import Button from "@mui/material/Button";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import Avatar from "@mui/material/Avatar";
 import { Container } from "@mui/material";
-import WestIcon from "@mui/icons-material/West";
+
 import FormControl from "@mui/material/FormControl";
 import ArrowForwardTwoToneIcon from "@mui/icons-material/ArrowForwardTwoTone";
 import Input from "@mui/material/Input";
 import InputAdornment from "@mui/material/InputAdornment";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+import OutlinedInput from '@mui/material/OutlinedInput';
+import IconButton from '@mui/material/IconButton';
 
-export default function SignUp() {
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
+
+
+
+export default function Login() {
+
+
+
+  const [showPassword, setShowPassword] = React.useState(false);
+
+  const handleClickShowPassword = () => setShowPassword((show) => !show);
+
+  const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+  };
+
   return (
     <Container maxWidth="sm">
       <Box>
-        <Box className="event--tablist profiletitle">
-          <Box className="layouttextbutton">
-            <Box className="layouttextbutton__text">
-              <WestIcon></WestIcon>
-            </Box>
-          </Box>
+        <Box className="profileedit__avatar login__avatar">
+          <Avatar
+            className="profileedit__avatarmain"
+            alt="Travis Howard"
+            src="/img/tenapp.png"
+          />
+          <Typography variant="h2" gutterBottom>
+            Tên app
+          </Typography>
         </Box>
-
         <Box
           className="profileedit__form loginform__form"
           sx={{ "& > :not(style)": { m: 1 } }}
         >
           <Typography className="loginform__title" variant="h3" gutterBottom>
-            Đăng ký
+            Đăng nhập
           </Typography>
-
-          <FormControl className="profileedit__itemform loginform__itemform">
-            <Input
-              id="input-with-icon-adornment"
-              placeholder="Họ và tên"
-              variant="outlined"
-              startAdornment={
-                <InputAdornment position="start">
-                  <PermIdentityIcon />
-                </InputAdornment>
-              }
-            />
-          </FormControl>
-
           <FormControl className="profileedit__itemform loginform__itemform">
             <Input
               id="input-with-icon-adornment"
@@ -59,45 +65,42 @@ export default function SignUp() {
               }
             />
           </FormControl>
-          <FormControl className="profileedit__itemform loginform__itemform">
-            <Input
-              id="input-with-icon-adornment-1"
-              placeholder="Mật khẩu"
-              variant="outlined"
-              startAdornment={
-                <InputAdornment position="start">
-                  <LockOutlinedIcon />
-                </InputAdornment>
-              }
-              endAdornment={
-                <InputAdornment position="end">
-                  <VisibilityOutlinedIcon />
-                </InputAdornment>
-              }
-            />
-          </FormControl>
 
-          <FormControl className="profileedit__itemform loginform__itemform">
-            <Input
-              id="input-with-icon-adornment-1"
-              placeholder="Nhập lại mật khẩu"
-              variant="outlined"
-              startAdornment={
-                <InputAdornment position="start">
-                  <LockOutlinedIcon />
-                </InputAdornment>
-              }
-              endAdornment={
-                <InputAdornment position="end">
-                  <VisibilityOutlinedIcon />
-                </InputAdornment>
-              }
-            />
-          </FormControl>
+          <FormControl className="profileedit__itemform loginform__itemform" variant="outlined">
+          <OutlinedInput
+            id="outlined-adornment-password"
+            placeholder="Mật khẩu"
+            type={showPassword ? 'text' : 'password'}
+            startAdornment={
+              <InputAdornment position="start">
+                <LockOutlinedIcon />
+              </InputAdornment>
+            }
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleClickShowPassword}
+                  onMouseDown={handleMouseDownPassword}
+                  edge="end"
+                >
+                  {showPassword ? <VisibilityOff /> : <Visibility />}
+                </IconButton>
+              </InputAdornment>
+            }
+           
+          />
+        </FormControl>
+
+
+
+     
+
+      
 
           <FormControl className="profileedit__itemform loginform__button">
-            <Button variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
-              Sign up
+            <Button className="button" variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
+              Đăng nhập
             </Button>
           </FormControl>
         </Box>

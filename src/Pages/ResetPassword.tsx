@@ -1,8 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import { Container } from "@mui/material";
 import WestIcon from "@mui/icons-material/West";
@@ -11,10 +9,14 @@ import ArrowForwardTwoToneIcon from "@mui/icons-material/ArrowForwardTwoTone";
 import Input from "@mui/material/Input";
 import InputAdornment from "@mui/material/InputAdornment";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
-import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+
 
 export default function ResetPassword() {
+
+
+
+
+
   return (
     <Container maxWidth="sm">
       <Box>
@@ -54,7 +56,7 @@ export default function ResetPassword() {
         
 
           <FormControl className="profileedit__itemform loginform__button">
-            <Button variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
+            <Button className="button" variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
              Gửi
             </Button>
           </FormControl>

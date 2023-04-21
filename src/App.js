@@ -6,19 +6,24 @@ import Intro from "./Pages/Intro";
 import TabList from "./Pages/TabList";
 import MapView from "./Pages/MapView";
 import Profile from "./Pages/Profile";
-import ProfileEdit from "./Pages/ProfileEdit";
+import ProfileEdit from "./Pages/ProfileEdit.tsx";
 
 import ProfileAbout from "./Pages/ProfileAbout";
 import ProfileEvent from "./Pages/ProfileEvent";
 import ProfileReview from "./Pages/ProfileReview";
 
-import Login from "./Pages/Login";
-import SignUp from "./Pages/SignUp";
+import Login from "./Pages/Login.tsx";
+import SignUp from "./Pages/SignUp.tsx";
 import SwitchLayout from "./Pages/Switch";
 import Verification from "./Pages/Verification";
-import ResetPassword from "./Pages/ResetPassword";
+import ResetPassword from "./Pages/ResetPassword.tsx";
 import SelectLocation from "./Pages/SelectLocation";
 import SearchPage from "./Pages/SearchPage";
+import SelectInterest from "./Pages/SelectInterest";
+import PositionedPopper from "./Pages/test.tsx";
+
+import TestDate from "./Pages/testdate.tsx";
+
 
 
 import "./assets/css/styles.css";
@@ -56,6 +61,13 @@ export default function App() {
         
         <Route path='searchpage' element={<SearchPage />} />       
         <Route path='switch' element={<SwitchLayout />} />   
+        <Route path='selectinterest' element={<SelectInterest />} />   
+        
+        
+        <Route path='test' element={<PositionedPopper />} />  
+        <Route path='testdate' element={<TestDate />} /> 
+
+        
         
 
       </Routes>

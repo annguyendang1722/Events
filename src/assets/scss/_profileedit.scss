@@ -38,6 +38,10 @@
         .MuiOutlinedInput-root {
             border-radius: 12px;
        }
+
+       input:-internal-autofill-selected {
+        background-color: white !important;
+    }
    }
     &__form {
         padding: 0px 20px;
@@ -59,7 +63,9 @@
             font-style: italic;
             border-radius: 12px;
        }
-        button {
+
+     
+        .button {
             background: #5669FF;
             width: 270px;
             margin: 0 auto;
