@@ -21,6 +21,12 @@ import SelectLocation from "./Pages/SelectLocation";
 import SearchPage from "./Pages/SearchPage";
 import SelectInterest from "./Pages/SelectInterest";
 import PositionedPopper from "./Pages/test.tsx";
+import AddEvent from "./Pages/AddEvent.tsx";
+import EventSubmit from "./Pages/EventSubmit.tsx";
+import InviteFriend from "./Pages/InviteFriend.tsx";
+
+
+
 
 import TestDate from "./Pages/testdate.tsx";
 
@@ -67,9 +73,12 @@ export default function App() {
         <Route path='test' element={<PositionedPopper />} />  
         <Route path='testdate' element={<TestDate />} /> 
 
-        
-        
+        <Route path='addevent' element={<AddEvent />} /> 
+        <Route path='eventsubmit' element={<EventSubmit />} />        
+        <Route path='invitefriend' element={<InviteFriend />} />        
 
+         
+        
       </Routes>
     </>
   );

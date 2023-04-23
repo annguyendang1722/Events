@@ -9,7 +9,7 @@
 @import "login";
 @import "selectlocation";
 @import "selectinterest";
-
+@import "addevent";
 
 html, body {
   margin: 0;
@@ -151,7 +151,7 @@ li:hover ul {
 
 
 
-a, span, div, p {
+a, span, div, p ,input, button{
   font-family: "Archivo";
 }
 
