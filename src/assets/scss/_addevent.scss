@@ -199,6 +199,32 @@
           font-weight: 100;
         }
       }
+
+      &--details
+      {
+        img 
+        {
+          width: 44px;
+          height: 44px;
+        }
+        .follow
+        {
+          border-radius: 7px;
+          font-weight: 100;
+          font-size: 12px;
+          font-style: italic;
+          text-transform: inherit;
+          padding: 8px;
+        }
+        .followblue 
+        {
+          color: white;background: #5669FF;
+        }
+        .unfollow 
+        {
+          background: rgba(240, 99, 90, 0.12);color: #F0635A;
+        }
+      }
     }
   
     &__listavatar {
@@ -226,6 +252,32 @@
     }
   
     &__item {
+      &--group
+      {
+        justify-content: space-between !important;
+        button 
+        {
+          width: 100px;
+        }
+      }
+      &--block 
+      {
+        .addevent__imgavatar,.MuiAvatar-colorDefault {
+          margin: 0px 3px;
+          border: initial !important;
+      }
+
+        button 
+        {
+          width: auto;
+          border-radius: 7px!important;
+          font-size: 12px !important;
+          font-weight: 100 !important;
+          font-style: italic;
+          padding: 8px 5px; 
+          text-transform: initial !important;
+        }
+      }
       justify-content: space-between;    padding-left: 24px;
       padding-right: 24px;
       .MuiListItemText-multiline {
@@ -294,6 +346,183 @@
       &:focus {
         box-shadow: unset;
       }
+    }
+
+    &--details
+    {
+      padding-top: 0px !important;
+      
+    }
+    &__listimg
+    {
+      display: flex;
+      align-items: center;
+      .event__avatar  
+      {
+        width: 34px !important;
+        height: 34px !important;
+      }
+      .event__number 
+      {
+      
+        span 
+        {
+          margin-bottom: 0px;
+          font-size: 15px;
+line-height: 16px;
+color: #3F38DD;
+        }
+      }
+      button
+      {
+        background: #5669FF;
+        color: white;
+        font-style: italic;
+        font-weight: 100;
+        border-radius: 7px;
+        text-transform: inherit;
+        font-size: 12px;
+
+      }
+    }
+    &__note 
+    {
+      padding: 0px 24px;
+      h3 
+      {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 34px;
+        opacity: 0.84;
+        color: #120D26;
+      }
+      p 
+      {
+        font-style: italic;
+font-weight: 100;
+font-size: 16px;
+line-height: 28px;
+color: #120D26;
+      }
+    }
+
+    &__bannereventdetails
+    {
+      position: relative;
+       .addevent
+       {
+        &__listimg
+        {
+          position: absolute;
+          bottom: -16px;
+          background: white;
+          border-radius: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 89%;
+          padding: 13px 14px;
+          box-shadow: 0px 20px 20px rgba(90, 90, 90, 0.1);
+        }
+&__listicon
+{
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+&__itemicon
+{
+  p 
+  {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+}
+
+
+        &__layouttextbutton 
+        {
+          position: absolute;
+          z-index: 99;
+        
+          width: 100%;
+          top: 15px; 
+          .layouttextbutton__text  
+          {
+            color: white;
+            svg 
+            {
+              margin-right: 10px;
+            }
+          }
+
+
+    
+
+          .layouttextbutton__button 
+          {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8.15485px);
+            
+            padding: 5px;
+            border-radius: 10px;
+
+            svg {
+              color: white;
+          }
+          }
+
+        }
+        &__changeimg 
+        {
+          padding: 0px !important;
+        }
+       }
+    }
+
+    &--eventpreview
+    {
+      position: relative;
+    }
+
+    &__bannereventpreview
+    {
+      position: absolute;
+      top:250px;
+      color:white;
+      padding: 0px 24px;
+
+      .addevent__imgavatar ,.MuiAvatar-colorDefault
+      {
+        margin: 0px 8px;
+    border: unset !important;
+      }
+
+      span,p,h1 
+      {
+        color:white;
+      }
+span 
+{
+  font-weight: 500;
+font-size: 16px;
+line-height: 34px;
+}
+h1
+{
+  font-style: normal;
+font-weight: 700;
+font-size: 50px;
+}
+p 
+{
+  font-weight: 500;
+font-size: 16px;
+line-height: 34px;
+}
+
+
     }
   }
   

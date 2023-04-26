@@ -71,12 +71,15 @@
     }
   }
 
+ 
+
   &__submit
   {
-    position: fixed;
+    position: fixed !important;
     left: 50%;
     transform: translateX(-50%);
     bottom: 35px;
+    z-index: 999;
     button 
     {
       background: #5669FF;

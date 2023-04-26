@@ -24,8 +24,9 @@ import PositionedPopper from "./Pages/test.tsx";
 import AddEvent from "./Pages/AddEvent.tsx";
 import EventSubmit from "./Pages/EventSubmit.tsx";
 import InviteFriend from "./Pages/InviteFriend.tsx";
-
-
+import EventDetails from "./Pages/EventDetails.tsx";
+import EventPreview from "./Pages/EventPreview.tsx";
+import EventBlockDetails from "./Pages/EventBlockDetails.tsx";
 
 
 import TestDate from "./Pages/testdate.tsx";
@@ -76,8 +77,9 @@ export default function App() {
         <Route path='addevent' element={<AddEvent />} /> 
         <Route path='eventsubmit' element={<EventSubmit />} />        
         <Route path='invitefriend' element={<InviteFriend />} />        
-
-         
+        <Route path='eventdetails' element={<EventDetails />} />        
+        <Route path='eventpreview' element={<EventPreview />} />   
+        <Route path='eventblockdetails' element={<EventBlockDetails />} />           
         
       </Routes>
     </>
