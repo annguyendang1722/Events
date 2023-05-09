@@ -2,7 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
+
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import Avatar from "@mui/material/Avatar";
 import { Container } from "@mui/material";

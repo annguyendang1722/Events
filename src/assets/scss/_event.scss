@@ -120,6 +120,46 @@
 
 			}
 
+			
+			&__tabsprofile {
+				.MuiTabs-flexContainer {
+					justify-content: center;
+				
+					
+					padding: 5px;
+				}
+
+				.Mui-selected {
+				
+					border-bottom: 3px solid #5669FF !important;
+				
+				}
+
+				.MuiTabs-indicator {
+					background-color: transparent;
+				}
+
+				button {
+					max-width: 33.33333%;
+					flex-basis: 33.33333%;
+					font-style: italic;
+					font-weight: 100;
+					font-size: 16px !important;
+					text-transform: uppercase;
+					padding: 5px 5px;
+					min-height: 35px;
+
+					&.Mui-selected {
+					
+						font-style: normal;
+						color: #5669FF;
+					
+					}
+
+				}
+
+			}
+
 		}
 
 		.layouttextbutton {
@@ -148,5 +188,16 @@
 		}
 
 	}
+
+	&--tabprofile 
+{
+background-color: white;
+.event__blog  
+{
+	background-color: white;
+}
+}
+
+	
 
 }

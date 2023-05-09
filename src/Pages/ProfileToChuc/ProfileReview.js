@@ -8,7 +8,7 @@ import { Container } from "@mui/material";
 import WestIcon from "@mui/icons-material/West";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Typography from "@mui/material/Typography";
-import Footerhome from "../Components/Home/Layout/footerhome";
+import Footerhome from "../../Components/Home/Layout/footerhome";
 
 const SmallAvatar = styled(Avatar)(({ theme }) => ({
   width: 22,

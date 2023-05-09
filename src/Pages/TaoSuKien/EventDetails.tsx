@@ -4,62 +4,67 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import ListItemText from "@mui/material/ListItemText";
-import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
 
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 
-import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
+import WestIcon from "@mui/icons-material/West";
 
-import IconButton from "@mui/material/IconButton";
-import PhotoCamera from "@mui/icons-material/PhotoCamera";
-import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import FormControl from "@mui/material/FormControl";
+import ArrowForwardTwoToneIcon from "@mui/icons-material/ArrowForwardTwoTone";
 
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
-import Typography from "@mui/material/Typography";
 
-const EventSubmit = () => {
+const EventDetails = () => {
   return (
-    <Container className="addevent" maxWidth="sm">
-      <Box className="layouttextbutton addevent__layouttextbutton">
-        <Box className="layouttextbutton__text">Tạo sự kiện mới</Box>
-        <Box className="layouttextbutton__button">
-          <Button variant="contained">Tiếp</Button>
+    <Container className="addevent addevent--details" maxWidth="sm">
+      <Box className="addevent__bannereventdetails">
+        <Box className="layouttextbutton addevent__layouttextbutton">
+          <Box className="layouttextbutton__text">
+            <WestIcon></WestIcon>Chi tiết sự kiện
+          </Box>
+          <Box className="layouttextbutton__button">
+            <BookmarkIcon></BookmarkIcon>
+          </Box>
         </Box>
-      </Box>
-      <Box className="addevent__changeimg">
-        <img src="img/banner1.png" />
-        <Stack
-          direction="row"
-          className="addevent__inputchangeimg"
-          alignItems="center"
-        >
-          <IconButton
-            color="primary"
-            aria-label="upload picture"
-            component="label"
-          >
-            <input hidden accept="image/*" type="file" />
-            <PhotoCamera />
-          </IconButton>
+        <Box className="addevent__changeimg">
+          <img src="img/banner1.png" />
+        </Box>
+        <Box className="addevent__item addevent__listimg">
+        <Box className="event__number">
+          <AvatarGroup max={3}>
+            <Avatar
+              className="event__avatar"
+              alt="Remy Sharp"
+              src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
+            />
+            <Avatar
+              className="event__avatar"
+              alt="Travis Howard"
+              src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d"
+            />
+            <Avatar
+              className="event__avatar"
+              alt="Cindy Baker"
+              src="https://images.unsplash.com/photo-1522770179533-24471fcdba45"
+            />
+          </AvatarGroup>
 
-          <Button variant="outlined" component="label">
-            Thay đổi
-            <input hidden accept="image/*" multiple type="file" />
-          </Button>
-        </Stack>
+          <span>+20 Tham gia</span>
+        </Box>
+        <Button variant="contained">Mời</Button>
       </Box>
+      </Box>
+
       <Box className="addevent__title">
         <Typography variant="h2" component="h2">
           International Band Music Concert
-        </Typography>{" "}
-        <Typography variant="p" component="p">
-          Enjoy your favorite dishe and a lovely your friends and family and
-          have a great time. Food from local food trucks..
         </Typography>
       </Box>
-      <List className="addevent__listitem">
+      <List className="addevent__listitem addevent__listitem--details">
         <ListItem className="addevent__item">
           <ListItemAvatar>
             <svg
@@ -116,13 +121,6 @@ const EventSubmit = () => {
             primary="Ngày 14 tháng 03 năm 2023"
             secondary="Thứ 3 , 4:00PM - 9:00PM"
           />
-
-          <Button
-            variant="contained"
-            startIcon={<DriveFileRenameOutlineIcon />}
-          >
-            Thay đổi
-          </Button>
         </ListItem>
         <ListItem className="addevent__item">
           <ListItemAvatar>
@@ -160,13 +158,6 @@ const EventSubmit = () => {
             </svg>
           </ListItemAvatar>
           <ListItemText primary="Lĩnh vực" secondary="Âm nhạc, Game" />
-
-          <Button
-            variant="contained"
-            startIcon={<DriveFileRenameOutlineIcon />}
-          >
-            Thay đổi
-          </Button>
         </ListItem>
         <ListItem className="addevent__item">
           <ListItemAvatar>
@@ -214,100 +205,52 @@ const EventSubmit = () => {
             primary="Gala Convention "
             secondary="36 Guild Street London, UK "
           />
+        </ListItem>
 
-          <Button
-            variant="contained"
-            startIcon={<DriveFileRenameOutlineIcon />}
-          >
-            Thay đổi
+        <ListItem className="addevent__item">
+          <ListItemAvatar>
+            <img src="img/avatar1.png" />
+          </ListItemAvatar>
+          <ListItemText
+            primary="Gala Convention "
+            secondary="36 Guild Street London, UK "
+          />
+
+          <Button className="follow" variant="contained">
+            Theo dõi
           </Button>
         </ListItem>
 
-        <ListItem className="addevent__item addevent__item--group">
-          <ListItemAvatar className="addevent__listavatar">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="41"
-              height="41"
-              viewBox="0 0 41 41"
-              fill="none"
-            >
-              <rect
-                opacity="0.1"
-                width="41"
-                height="41"
-                rx="10.25"
-                fill="url(#paint0_linear_621_13243)"
-              ></rect>
-              <path
-                d="M24.5039 20.4998C23.4749 20.4998 22.4799 20.0403 21.7012 19.2065C20.9439 18.3932 20.4815 17.3086 20.3999 16.1535C20.3128 14.9213 20.6887 13.7882 21.4579 12.9624C22.2272 12.1366 23.3027 11.6912 24.5039 11.6912C25.6966 11.6912 26.7751 12.1446 27.5419 12.9684C28.3161 13.8002 28.693 14.9313 28.6059 16.153C28.5223 17.3096 28.0604 18.3937 27.3047 19.206C26.5279 20.0403 25.5334 20.4998 24.5039 20.4998ZM31.1019 29.3083H17.9065C17.6943 29.3095 17.4847 29.2619 17.2939 29.1693C17.103 29.0768 16.9359 28.9416 16.8054 28.7743C16.667 28.593 16.5715 28.3826 16.5259 28.1591C16.4803 27.9356 16.4858 27.7046 16.5422 27.4836C16.9636 25.7914 18.0076 24.388 19.5611 23.4256C20.9399 22.5718 22.6952 22.1013 24.5039 22.1013C26.3482 22.1013 28.0574 22.5518 29.4442 23.4051C31.0013 24.3625 32.0468 25.7739 32.4662 27.4866C32.5218 27.7078 32.5268 27.9387 32.4807 28.1622C32.4345 28.3856 32.3386 28.5957 32.1999 28.7768C32.0696 28.9434 31.9029 29.0778 31.7126 29.17C31.5222 29.2621 31.3133 29.3094 31.1019 29.3083Z"
-                fill="#FF6258"
-              ></path>
-              <path
-                opacity="0.4"
-                d="M15.0451 20.7C13.2839 20.7 11.7354 19.0624 11.5917 17.0499C11.5207 16.0189 11.842 15.0655 12.4926 14.3663C13.1362 13.6741 14.0441 13.2927 15.0451 13.2927C16.0461 13.2927 16.947 13.6761 17.5941 14.3723C18.2497 15.077 18.57 16.0284 18.495 17.0509C18.3513 19.0629 16.8033 20.7 15.0451 20.7ZM18.3313 22.274C17.451 21.8436 16.3083 21.6284 15.0456 21.6284C13.5712 21.6284 12.1393 22.0127 11.0132 22.7104C9.73643 23.5027 8.87759 24.6563 8.53075 26.0492C8.48 26.2495 8.4752 26.4587 8.51671 26.6612C8.55823 26.8637 8.64498 27.0541 8.77049 27.2183C8.88958 27.3712 9.04214 27.4947 9.21646 27.5794C9.39077 27.6641 9.58218 27.7077 9.77597 27.7068H15.3314C15.4252 27.7068 15.5159 27.6739 15.5879 27.6138C15.6599 27.5537 15.7085 27.4702 15.7253 27.378C15.7308 27.3464 15.7378 27.3149 15.7458 27.2839C16.1702 25.5792 17.1647 24.1388 18.6341 23.0888C18.6882 23.0498 18.7316 22.998 18.7606 22.938C18.7895 22.878 18.8031 22.8117 18.7999 22.7452C18.7968 22.6786 18.7771 22.6139 18.7427 22.5569C18.7082 22.4999 18.66 22.4523 18.6026 22.4186C18.524 22.3726 18.4339 22.324 18.3313 22.274Z"
-                fill="#FF6258"
-              ></path>
-              <defs>
-                <linearGradient
-                  id="paint0_linear_621_13243"
-                  x1="41"
-                  y1="1.2219e-06"
-                  x2="-1.2219e-06"
-                  y2="41"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#FF6056"></stop>
-                  <stop offset="1" stop-color="#FF655B"></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-
-            <AvatarGroup className="addevent__listavatar"  max={4}>
-              <Avatar className="addevent__imgavatar"
-                alt="Remy Sharp"
-                src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              />
-              <Avatar className="addevent__imgavatar"
-                alt="Travis Howard"
-                src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              />
-              <Avatar className="addevent__imgavatar"
-                alt="Cindy Baker"
-                src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              />
-              <Avatar className="addevent__imgavatar"
-                alt="Agnes Walker"
-                src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              />
-              <Avatar className="addevent__imgavatar"
-                alt="Cindy Baker"
-                src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              />
-              <Avatar className="addevent__imgavatar"
-                alt="Agnes Walker"
-                src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              />
-              <Avatar className="addevent__imgavatar"
-                alt="Cindy Baker"
-                src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              />
-              <Avatar className="addevent__imgavatar"
-                alt="Agnes Walker"
-                src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              />
-              <Avatar className="addevent__imgavatar"
-                alt="Trevor Henderson"
-                src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e"
-              />
-            </AvatarGroup>
+        <ListItem className="addevent__item">
+          <ListItemAvatar>
+            <img src="img/avatar1.png" />
           </ListItemAvatar>
-          <Button variant="contained" startIcon={<PersonAddAltIcon />}>
-            Mời
+          <ListItemText
+            primary="Gala Convention "
+            secondary="36 Guild Street London, UK "
+          />
+
+          <Button className="follow unfollow" variant="contained">
+            Bỏ theo dõi
           </Button>
         </ListItem>
       </List>
+
+      <Box className="addevent__note">
+        <Typography variant="h3" component="h3">
+          Mô tả sự kiện
+        </Typography>
+        <Typography variant="p" component="p">
+          Enjoy your favorite dishe and a lovely your friends and family and
+          have a great time. Food from local food trucks..
+        </Typography>
+      </Box>
+      <FormControl className="selectinterest__submit">
+        <Button variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
+          Mua vé 100.000 VNĐ
+        </Button>
+      </FormControl>
     </Container>
   );
 };
-export default EventSubmit;
+export default EventDetails;

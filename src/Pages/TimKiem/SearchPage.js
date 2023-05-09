@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Container } from "@mui/material";
-import Headerhome from "../Components/Home/Layout/headerhome";
-import EventVertical from "../Components/Home/Event/eventvertical";
+import Headerhome from "../../Components/Home/Layout/headerhome";
+import EventVertical from "../../Components/Home/Event/eventvertical";
 
 
 

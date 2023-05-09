@@ -1,32 +1,32 @@
 import React from "react";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Pages/Home";
-import Intro from "./Pages/Intro";
-import TabList from "./Pages/TabList";
-import MapView from "./Pages/MapView";
-import Profile from "./Pages/Profile";
-import ProfileEdit from "./Pages/ProfileEdit.tsx";
+import { Routes, Route } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Intro from "./Pages/Intro/Intro";
+import EventUncomingPast from "./Pages/EventUncomingPast";
+import MapView from "./Pages/Home/MapView";
+import Profile from "./Pages/Home/Profile";
+import ProfileEdit from "./Pages/Home/ProfileEdit.tsx";
 
-import ProfileAbout from "./Pages/ProfileAbout";
-import ProfileEvent from "./Pages/ProfileEvent";
-import ProfileReview from "./Pages/ProfileReview";
+import ProfileAbout from "./Pages/ProfileToChuc/ProfileAbout";
+import ProfileEvent from "./Pages/ProfileToChuc/ProfileEvent";
+import ProfileReview from "./Pages/ProfileToChuc/ProfileReview";
 
-import Login from "./Pages/Login.tsx";
-import SignUp from "./Pages/SignUp.tsx";
+import Login from "./Pages/Authentication/Login.tsx";
+import SignUp from "./Pages/Authentication/SignUp.tsx";
 import SwitchLayout from "./Pages/Switch";
-import Verification from "./Pages/Verification";
-import ResetPassword from "./Pages/ResetPassword.tsx";
-import SelectLocation from "./Pages/SelectLocation";
-import SearchPage from "./Pages/SearchPage";
-import SelectInterest from "./Pages/SelectInterest";
+import Verification from "./Pages/Authentication/Verification.tsx";
+import ResetPassword from "./Pages/Authentication/ResetPassword.tsx";
+import SelectLocation from "./Pages/Authentication/SelectLocation";
+import SearchPage from "./Pages/TimKiem/SearchPage";
+import SelectInterest from "./Pages/Authentication/SelectInterest";
 import PositionedPopper from "./Pages/test.tsx";
-import AddEvent from "./Pages/AddEvent.tsx";
-import EventSubmit from "./Pages/EventSubmit.tsx";
-import InviteFriend from "./Pages/InviteFriend.tsx";
-import EventDetails from "./Pages/EventDetails.tsx";
-import EventPreview from "./Pages/EventPreview.tsx";
-import EventBlockDetails from "./Pages/EventBlockDetails.tsx";
+import AddEvent from "./Pages/TaoSuKien/AddEvent.tsx";
+import EventSubmit from "./Pages/TaoSuKien/EventSubmit.tsx";
+import InviteFriend from "./Pages/TaoSuKien/InviteFriend.tsx";
+import EventDetails from "./Pages/TaoSuKien/EventDetails.tsx";
+import EventPreview from "./Pages/TaoSuKien/EventPreview.tsx";
+import EventBlockDetails from "./Pages/TaoSuKien/EventBlockDetails.tsx";
 
 
 import TestDate from "./Pages/testdate.tsx";
@@ -50,7 +50,7 @@ export default function App() {
         <Route index element={<Home />} />
        
         <Route path='intro' element={<Intro />} />
-        <Route path='tabpage' element={<TabList />} />
+        <Route path='eventuncomingpast' element={<EventUncomingPast />} />
         <Route path='mapview' element={<MapView />} />
         <Route path='profile' element={<Profile />} />
         <Route path='profileedit' element={<ProfileEdit />} />   

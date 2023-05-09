@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "@mui/material";
-import EventsMapView from "../Components/Home/Event/eventmapview";
+import EventsMapView from "../../Components/Home/Event/eventmapview";
 import Box from "@mui/material/Box";
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';

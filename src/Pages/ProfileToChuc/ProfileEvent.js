@@ -8,14 +8,14 @@ import { Container } from "@mui/material";
 import WestIcon from "@mui/icons-material/West";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Typography from "@mui/material/Typography";
-import Footerhome from "../Components/Home/Layout/footerhome";
+import Footerhome from "../../Components/Home/Layout/footerhome";
 
 const SmallAvatar = styled(Avatar)(({ theme }) => ({
   width: 22,
   height: 22,
 }));
 
-export default function Profile() {
+export default function ProfileEvent() {
   return (
     <Container maxWidth="sm">
       <Box className="event--tablist profiletitle">
@@ -92,5 +92,20 @@ export default function Profile() {
 
       <Footerhome />
     </Container>
+  );
+}
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+  return (
+    <Box
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && <Typography component="Box">{children}</Typography>}
+    </Box>
   );
 }

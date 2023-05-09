@@ -878,6 +878,33 @@
   color: #5669FF;
   background: #FFFFFF;
 }
+.event--tablist .event__tabsprofile .MuiTabs-flexContainer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+.event--tablist .event__tabsprofile .Mui-selected {
+  border-bottom: 3px solid #5669FF !important;
+}
+.event--tablist .event__tabsprofile .MuiTabs-indicator {
+  background-color: transparent;
+}
+.event--tablist .event__tabsprofile button {
+  max-width: 33.33333%;
+  -ms-flex-preferred-size: 33.33333%;
+      flex-basis: 33.33333%;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 16px !important;
+  text-transform: uppercase;
+  padding: 5px 5px;
+  min-height: 35px;
+}
+.event--tablist .event__tabsprofile button.Mui-selected {
+  font-style: normal;
+  color: #5669FF;
+}
 .event--tablist .layouttextbutton {
   padding-right: 0px;
 }
@@ -897,6 +924,12 @@
 .event--tablist .layouttextbutton__button svg {
   font-size: 20px;
   color: black;
+}
+.event--tabprofile {
+  background-color: white;
+}
+.event--tabprofile .event__blog {
+  background-color: white;
 }
 
 .mapview {
@@ -918,6 +951,19 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background: white;
+  padding: 0px 24px;
+  margin-top: 10px;
+}
+.listbutton--profile .listbutton__itemslide {
+  width: auto;
+  margin-right: 9px;
+  margin-bottom: 13px;
+}
+.listbutton--profile .listbutton__slide {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
 }
 
 .profileedit__avatar {
@@ -928,6 +974,19 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.profileedit__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 24px !important;
+  margin-top: 20px;
+}
+.profileedit__button h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  color: #172B4D;
+}
 .profileedit__avatarmain {
   width: 98px !important;
   height: 98px !important;
@@ -936,6 +995,7 @@
 }
 .profileedit__aboutus {
   color: black;
+  padding: 0px 24px;
 }
 .profileedit__aboutus h3 {
   font-weight: 500;
@@ -1005,6 +1065,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 21px;
+}
+.profileedit__listbutton--1 button {
+  border: 1.5px solid #5669FF;
+  color: #5669FF;
+  background-color: white !important;
 }
 .profileedit__listbutton button {
   border-radius: 10px;

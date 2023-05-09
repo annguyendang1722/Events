@@ -15,7 +15,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import WestIcon from "@mui/icons-material/West";
 
 
-export default function Tabpage() {
+export default function EventUncomingPast() {
   //   const classes = useStyles();
   const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => {
