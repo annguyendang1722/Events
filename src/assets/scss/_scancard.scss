@@ -1,0 +1,49 @@
+.scancard
+{
+    height: 100vh;
+    padding-top: 40px !important;
+    .layouttextbutton  
+    {
+        padding-left: 20px;
+    }
+    &__text 
+    {
+        line-height: 29px;
+        text-align: center;
+        color: #747688;
+        width: 265px;
+        margin: 0 auto;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 16px;
+        margin-top: 65px;
+    }
+    &__img 
+    {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        img 
+        {
+            width: 100%;
+        }
+    }
+    
+    .selectinterest__submit
+    {
+        .MuiButton-endIcon
+        {
+
+            background: #747688;
+            color: #FFFFFF;
+        }
+       button 
+       {    box-shadow: unset !important;
+        background: #EBEBEC;font-weight: 500;
+        font-size: 16px;
+        border-radius: 15px;color: #747688;
+       }
+    }
+}

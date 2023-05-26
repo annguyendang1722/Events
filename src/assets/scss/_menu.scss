@@ -4,48 +4,38 @@
     padding: 0px 10px !important;
     height: 29px !important;
 }
-
 .header {
     &__top {
         padding-right: 15px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-
         svg {
             font-size: 20px;
             color: white;
-        }
-
-    }
-
+       }
+   }
     &__topleft {
         max-width: 10%;
         flex-basis: 10%;
-    }
-
+   }
     &__topcenter {
         flex: 1;
         text-align: center;
-
         label {
             color: white;
             font-size: 13px !important;
             font-style: italic;
-        }
-
+       }
         .MuiSelect-select {
             font-size: 13px;
             color: white;
             width: 200px;
-        }
-
+       }
         fieldset {
             border: unset;
-        }
-
-    }
-
+       }
+   }
     &__topright {
         max-width: 30px;
         flex-basis: 30px;
@@ -55,8 +45,7 @@
         justify-content: center;
         align-items: center;
         background: rgba(255, 255, 255, 0.1);
-    }
-
+   }
     &__search {
         padding-left: 15px;
         display: flex;
@@ -64,53 +53,39 @@
         align-items: center;
         padding-right: 15px;
         margin-top: 10px;
-
         .line {
             border-color: rgba(121, 116, 231, 1);
             height: 20px;
-        }
-
+       }
         form {
             background-color: transparent;
             box-shadow: unset;
-
             input {
                 &::placeholder {
-                   font-weight: 100;
+                    font-weight: 100;
                     font-style: italic;
-                }
-
+               }
                 color: white;
                 box-shadow: unset;
-
                 &:focus {
                     box-shadow: unset;
-                }
-
-            }
-
-        }
-
+               }
+           }
+       }
         .iconsearch {
             color: white;
             padding-left: 0px;
             padding-right: 0px;
-
             svg {
                 font-size: 20px;
-            }
-
-        }
-
-    }
-
-    &__address
-    {
+           }
+       }
+   }
+    &__address {
         font-size: 13px;
         text-align: center;
         margin-left: -14px;
-    }
-
+   }
     &__selectaddress {
         color: white !important;
         padding: 0px !important;
@@ -124,50 +99,39 @@
         width: 100%;
         padding: 0px;
         text-transform: initial !important;
-        span 
-        {
+        span {
             color: #FFFFFF;
-
-opacity: 0.7;
-        }
-
+            opacity: 0.7;
+       }
         .MuiButton-endIcon {
             display: unset;
             margin-right: 0px !important;
             margin-left: 0px !important;
             opacity: 1 !important;
             line-height: 0;
-        }
-
-    }
-
+       }
+   }
     &__dialog {
         text-align: center;
-
         .MuiPaper-root {
             padding: 20px 20px;
             max-height: calc(100% - 33px);
-        }
-
+       }
         img {
             width: 100px;
             margin: 0 auto;
-        }
-
-    }
-
+       }
+   }
     &__dialogcontent {
         color: #747688;
         font-style: italic;
-    }
-
+   }
     &__dialogtitle {
         color: black !important;
         font-size: 22px !important;
         line-height: 34px;
         padding-bottom: 0px !important;
-    }
-
+   }
     &__button {
         background: #5669FF !important;
         box-shadow: 0px 10px 35px rgba(111, 126, 201, 0.25);
@@ -179,64 +143,53 @@ opacity: 0.7;
         font-weight: 500;
         font-size: 16px !important;
         line-height: 17px;
-    }
-
+   }
     &__searchright {
         background: rgb(93, 86, 243);
         border-radius: 50px;
         padding: 5px 5px;
         flex: 1;
         display: flex;
-        align-items: center;background: rgb(93, 86, 243);
-    border-radius: 50px;
-    padding: 5px 5px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-
+        align-items: center;
+       background: rgb(93, 86, 243);
+        border-radius: 50px;
+        padding: 5px 5px;
+        flex: 1;
+        display: flex;
+        align-items: center;
         span:last-child {
             font-style: italic;
             font-size: 12px;
             margin-left: 5px;
-        }
-
-    }
-
+       }
+   }
     &__searchleft {
         max-width: 77%;
         flex-basis: 77%;
-    }
-
+   }
     &__home {
         width: 100%;
         height: 130px;
         padding-top: 10px;
         background: #4A43EC;
         border-radius: 0px 0px 33px 33px;
-    }
-
+   }
     &__avatar {
         box-shadow: unset !important;
         padding-left: 30px;
         margin-top: 45px;
-
         img {
             border-radius: 100%;
-        }
-
-    }
-
+       }
+   }
     &__imgavatar {
         margin-bottom: 9px;
-    }
-
+   }
     &__menuclick {
         span {
             display: none;
-        }
-
-    }
-
+       }
+   }
     &__menubottom {
         button {
             margin-top: 30px;
@@ -245,38 +198,29 @@ opacity: 0.7;
             box-shadow: unset;
             border-radius: 8px;
             color: rgba(0, 248, 255, 1);
-        }
-
-    }
-
+       }
+   }
     &__name {
         font-size: 19px !important;
         font-weight: 500 !important;
-    }
-
+   }
     &__menu {
         .MuiDrawer-paper {
             background-color: #fff;
             width: 80%;
-        }
-
-    }
-
+       }
+   }
     &__menuitem {
         margin-bottom: 0px;
-
         a {
             color: rgba(0, 0, 0, 1);
             font-size: 16px;
             font-style: italic;
             font-weight: 100;
-        }
-
+       }
         svg {
             margin-right: 16px;
             font-size: 20px;
-        }
-
-    }
-
+       }
+   }
 }

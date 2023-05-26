@@ -1,0 +1,99 @@
+.header 
+{
+    &__popup
+    {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999999999999 !important;
+        .header
+        {
+            &__dialog 
+            {
+                img 
+                {
+                    width: 100%;
+                    border-radius: 10.0678px;
+                    margin-bottom: 30px;
+                }
+            }
+            &__dialogtitle  
+            {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px !important;
+                line-height: 26px;
+                text-align: center;
+                margin-bottom: 12px;
+            }
+
+            &__dialogcontent
+            {
+                font-style: italic;
+                font-weight: 100;
+                font-size: 14px;
+                line-height: 23px;
+                color: #747688;
+
+            }
+
+            &__dialogbutton
+            {
+                display: flex;
+                justify-content: center;
+                button 
+                {
+                    border-radius: 50px;
+                    font-style: italic;
+                    font-weight: 100;
+                    width: 116px;
+                    font-size: 14px;
+                    &:nth-child(1)
+                    {
+                     text-transform: inherit;
+                        background-color: transparent !important;
+                        color: #69738C !important;
+                        box-shadow: unset;
+                    }
+                }
+            }
+
+            &__dialogstaritem
+            {
+                color: #FDC400;
+                svg 
+                {
+                    font-size: 30px;
+                }
+                text-align: center;
+            }
+
+            &__dialogstaritemgrey
+            {
+                color: #D8DDEB;
+            }
+
+            &__dialogstar
+            {
+                   display: flex;
+                   justify-content: space-evenly;
+                   margin-bottom: 29px;
+                   margin-top: 28px;
+            }
+        }
+    }
+
+    &__popupinner
+    {
+        padding: 12px 14px;
+        background-color: white;
+        border-radius: 20px;
+        max-width: 90%;
+    }
+}

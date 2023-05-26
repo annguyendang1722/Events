@@ -1,0 +1,88 @@
+.confirm
+{
+    margin-top:20px;
+    .layouttextbutton 
+    {
+        padding-left: 24px;
+    }
+
+
+
+    .layouttextbutton__text svg {
+        margin-right: 10px;
+    }
+
+    .layouttextbutton__text {
+        font-size: 24px;
+    }
+
+    &__title
+    {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #363F4F;
+        margin-bottom: 20px;
+        padding-left: 24px;
+    }
+
+    &__voucher
+    {
+        margin-top: 25px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    &__vouchertitle
+    {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 17px;
+        color: #120D26;
+      
+    }
+    &__item
+    {
+        padding-bottom: 0px;
+    }
+    &__listitem
+    {
+        background: #F8F8F8;
+        border-radius: 10px;
+        display: flex;
+        padding-right: 10px;
+        svg 
+        {
+            color: #A1A2AB;
+            font-size: 20px;
+        }
+        span 
+        {
+            font-weight: 100;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #7C8297;font-family: 'Archivo';
+            font-style: italic;
+        }
+        p 
+        {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: #363F4F;
+            display: flex;
+            align-items: center;
+            span 
+            {
+                margin-left: 12px;
+                background: #F0635A;
+                border-radius: 100px;
+                color: white;
+                font-style: normal;
+                font-size: 10px;
+                padding: 4px 8px 4px 9px;
+                margin-bottom: 0px;
+                text-transform: inherit;
+            }
+        }
+    }
+}

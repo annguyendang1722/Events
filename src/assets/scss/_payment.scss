@@ -1,0 +1,311 @@
+.payment {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 20px;
+    &__dialog {
+        text-align: center;
+        .MuiPaper-root {
+            padding: 20px 20px;
+            max-height: calc(100% - 33px);
+            margin-bottom: 0px;
+            background: #5669FF;
+            border-radius: 38px 38px 0px 0px;
+            @media(max-width:991px) {
+                min-width: 100%;
+           }
+       }
+        .MuiFormControl-root {
+            width:100%;
+       }
+        .MuiDialog-scrollPaper {
+            align-items: flex-end;
+       }
+   }
+    &__dialogform {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        label {
+            position: unset !important;
+            text-align: left;
+            font-style: italic;
+            font-weight: 100;
+            font-size: 16px;
+            line-height: 25px;
+            color: #E8E8E8 !important;
+            transform: unset;
+            transition: unset;
+       }
+        .MuiInput-root {
+            margin-top: 0px !important;
+            &:before {
+                border-bottom: unset!important;
+           }
+            input {
+                height: 60px;
+                background: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(238, 238, 238, 0.25);
+                border-radius: 10px;
+                &:focus {
+                    box-shadow: unset!important;
+               }
+           }
+       }
+   }
+    &__dialogcontent {
+        color: #747688;
+        font-style: italic;
+   }
+    &__dialogtitle {
+        color: black !important;
+        font-size: 22px !important;
+        line-height: 34px;
+        padding-bottom: 0px !important;
+   }
+   &__button
+   {
+    background: #FFFFFF !important;
+    width: 270px;
+    margin: 0 auto !important;
+    margin-top: 20px;
+    border-radius: 10px!important;
+    box-shadow: 0px 10px 35px rgba(111, 126, 201, 0.25);
+    font-weight: 500!important;
+    font-size: 16px!important;
+    line-height: 17px!important;
+    padding: 13px 20px!important;
+    color:#5669FF !important;
+
+
+
+
+
+
+    .MuiButton-endIcon {
+        position: absolute;
+        right: 10px;
+        background: #3D56F0;
+        border-radius: 100%;
+        padding: 3px;
+        color:#FFFFFF;
+    }
+
+
+
+
+
+   }
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #363F4F;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button 
+        {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 15px;
+            color: #5669FF!important;
+            text-align: right;
+            padding-right: 0px;
+            letter-spacing: 0.01em;
+            text-transform: capitalize;
+            background: transparent;
+        }
+   }
+
+   &__save
+   {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 26px;
+    margin-bottom: 41px;
+    display: flex;
+    align-items: center;
+    svg 
+    {
+        background: white;
+        border-radius: 100%;
+        margin-right: 13px;
+    }
+   }
+    .layouttextbutton__text svg {
+        margin-right: 10px;
+   }
+    .layouttextbutton__text {
+        font-size: 24px;
+   }
+    &__list {
+        > div, > div > div {
+            width: 100%;
+       }
+   }
+    &__radio {
+        margin-bottom: 0px;
+        margin-right: 0px !important;
+        span {
+            svg {
+                height: 2rem;
+                width: 2rem;
+                color: #5669FF;
+           }
+       }
+   }
+    &__item {
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid #E5E5E5;
+        border-radius: 15px;
+        margin-bottom: 13px;
+        .MuiListItemText-root span {
+            font-style: italic;
+            font-weight: 100;
+            font-size: 16px;
+            line-height: 25px;
+            color: #000000;
+       }
+   }
+    &__creditcard {
+        span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 17px;
+            color: #120D26;
+       }
+   }
+    &__itemcard {
+        .MuiListItemAvatar-root {
+            display: flex;
+            align-items: center;
+       }
+        .MuiListItemAvatar-root > .MuiAvatar-circular {
+            &:nth-child(1) {
+                width: 44px;
+                object-fit: cover;
+                border-radius: 6px;
+                height: 27px;
+                margin-right: 16px;
+           }
+            &:nth-child(2) , &:nth-child(3) , &:nth-child(4) {
+                width: 32px;
+                object-fit: cover;
+                border-radius: 0px;
+                margin-right: 10px;
+                height: 6px;
+           }
+       }
+   }
+    &__creditcardtext {
+        position: relative;
+        span {
+            font-weight: 500 !important;
+            font-style: normal !important;
+            line-height: 15px;
+            color: #363F4F;
+            letter-spacing: 0.07em;
+       }
+   }
+    &__voucher {
+        width: 100%;
+        margin-top: 19px;
+        div {
+            width: 100%;
+            height: 60px;
+            border-radius: 15px;
+       }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        input {
+            box-shadow:unset;
+            height: 60px;
+            padding-left: 18px;
+            &:focus {
+                box-shadow:unset;
+           }
+            &::placeholder {
+                font-style: italic;
+                font-weight: 100;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #7C8297;
+           }
+       }
+        button {
+            padding: 14px 15px;
+            position: absolute;
+            right: 0;
+            background: #5669FF;
+            border-radius: 15px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+       }
+   }
+    &__checkbox {
+        margin-top: 19px;
+        padding-left: 20px;
+        margin-right: 0px !important;
+        .MuiSvgIcon-root {
+            visibility: hidden ;
+       }
+        input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+       }
+       /* Create a custom checkbox */
+        .MuiTouchRipple-root {
+            position: absolute;
+            top: 3px;
+            left: -6px;
+            height: 25px;
+            width: 25px;
+            background-color: white;
+            border: 2px solid #DDDDDD;
+            border-radius: 15px;
+       }
+       /* On mouse-over, add a grey background color */
+        &:hover input ~ .MuiTouchRipple-root {
+            background-color: white;
+       }
+       /* When the checkbox is checked, add a blue background */
+        input:checked ~ .MuiTouchRipple-root {
+            background-color: #5669FF;
+       }
+       /* Create the MuiTouchRipple-root/indicator (hidden when not checked) */
+        .MuiTouchRipple-root:after {
+            content: "";
+            position: absolute;
+            display: none;
+       }
+       /* Show the MuiTouchRipple-root when checked */
+        input:checked ~ .MuiTouchRipple-root:after {
+            display: block;
+       }
+       /* Style the MuiTouchRipple-root/indicator */
+        .MuiTouchRipple-root:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+       }
+   }
+}
