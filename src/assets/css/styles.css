@@ -6,7 +6,7 @@
 .intro__sliderimg {
   text-align: center;
   overflow: unset !important;
-  margin-bottom: 0px;
+  margin-bottom: -35px;
 }
 .intro__sliderimg img {
   max-width: 76%;
