@@ -6,10 +6,10 @@
 .intro__sliderimg {
   text-align: center;
   overflow: unset !important;
-  margin-bottom: -100px;
+  margin-bottom: 0px;
 }
 .intro__sliderimg img {
-  max-width: 80%;
+  max-width: 76%;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -691,6 +691,7 @@
 .header__dialog .MuiPaper-root {
   padding: 20px 20px;
   max-height: calc(100% - 33px);
+  max-width: 315px;
 }
 .header__dialog img {
   width: 100px;

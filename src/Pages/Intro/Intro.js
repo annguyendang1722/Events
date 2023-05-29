@@ -85,7 +85,12 @@ const Intro = () => {
                   Bỏ qua
             </Link>
           </Box>   
-            
+          <Box className="swiper-button-next">
+    
+    <Link href="/">
+        Bắt đầu
+    </Link>
+  </Box>  
       </Box>
       </Container>
     </>
