@@ -31,7 +31,9 @@
   line-height: 34px;
 }
 .intro__box em {
+  font-weight: 100;
   font-size: 15px;
+  line-height: 25px;
   opacity: 0.8;
 }
 .intro__inner {

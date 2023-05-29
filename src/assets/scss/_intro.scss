@@ -32,7 +32,9 @@
     }
 
     em {
+      font-weight: 100;
       font-size: 15px;
+      line-height: 25px;
       opacity: 0.8;
     }
 
@@ -88,7 +90,7 @@
   }
 
 
-  
+
   &__text {
     .swiper-button-prev, .swiper-button-next {
       color: white !important;
