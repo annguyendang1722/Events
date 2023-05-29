@@ -1,36 +1,40 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import Link from "@mui/material/Link";
 import { Container } from "@mui/material";
-// Import Swiper styles
+import {
+  Navigation,
+  Pagination,
+  FreeMode,
+  Thumbs,
+} from "swiper";
+import Box from "@mui/material/Box";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-
-import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
-
-// import required modules
-import { FreeMode, Navigation, Thumbs } from "swiper";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 const Intro = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
   return (
-    <>
-      <Container className="intro" maxWidth="sm">
+    <Container className="intro" maxWidth="sm">
+     
+  
+    
       <Swiper
-        
-        loop={true}
+        style={{
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
+        }}
         spaceBetween={10}
-      
+        loop={true}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper }}
+        // modules={[FreeMode, Thumbs]}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2 intro__sliderimg"
-
-        watchSlidesProgress={true}
-        freeMode={true} 
-        onSwiper={setThumbsSwiper}
       >
         <SwiperSlide>
           <img  src="/img/iphone1.png" />
@@ -41,22 +45,18 @@ const Intro = () => {
         <SwiperSlide>
           <img  src="/img/iphone3.png" />
         </SwiperSlide>
-      
       </Swiper>
       <Swiper
-       
-        loop={true}
+        onSwiper={setThumbsSwiper}
         spaceBetween={10}
-        slidesPerView={1}
+        pagination={true} 
         navigation={true}
-        
-        modules={[FreeMode, Navigation, Thumbs]}
+        slidesPerView={1}
+        freeMode={true}
+        loop
+        watchSlidesProgress={true}
+        modules={[FreeMode,Pagination, Navigation, Thumbs]}
         className="mySwiper intro__text"
-
-
-        thumbs={{ swiper: thumbsSwiper }}
-
-
       >
         <SwiperSlide>
           <Box className="intro__box">
@@ -77,7 +77,7 @@ const Intro = () => {
           </Box>
         </SwiperSlide>
       </Swiper>
-
+     
       <Box className="swiper-next-prev"> 
           <Box className="swiper-button-prev">
     
@@ -87,8 +87,9 @@ const Intro = () => {
           </Box>   
             
       </Box>
-      </Container>
-    </>
+
+    </Container>
   );
 };
+
 export default Intro;

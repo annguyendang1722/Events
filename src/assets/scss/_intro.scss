@@ -1,9 +1,9 @@
 .intro {
-  padding-top: 75px;
+   padding-top: 30px;
 
   &__sliderimg {
     text-align: center;
-
+    overflow: unset !important;
     img {
       max-width: 80%;
       width: 100%;
@@ -19,7 +19,7 @@
     margin-bottom: -15px;
     background-color: #5669ff;
     padding: 40px 40px;
-    border-radius: 48px;
+    border-radius: 48px 48px 0px 0px;
     text-align: center;
 
     p, em {
@@ -39,15 +39,59 @@
   }
 
   &__inner {
-    max-width: 251px;
+    max-width: 265px;
     margin: 0 auto;
+  }
+
+  .swiper-button-next { 
+    top: auto;
+  
+    position: absolute;
+    bottom: 0;
+    z-index: 9999;
+    &:after {
+      content: "Tiếp";
+      font-size: 18px;
+      right: 16px;
+      width: 90px;
+      font-family: "Archivo";
+    }
+  }
+
+  .swiper-next-prev  
+  {
+    position: absolute;
+    left: 40px;
+    bottom: 38px;
+    width: 100px;
+    .swiper-button-prev 
+    {
+      a 
+      {
+        color: #FFFFFF;
+
+        opacity: 0.5;
+        font-size: 18px;
+        content:"Bỏ qua";
+        font-family: "Archivo";
+        min-width: 60px;
+      }
+     &:after 
+     {
+      color: white;
+      font-size: 18px;
+      display: none;
+      // content:"Bỏ qua";
+      // font-family: "Archivo";
+     }
+    }
   }
 
   &__text {
     .swiper-button-prev, .swiper-button-next {
       color: white !important;
       opacity: 1 !important;
-      bottom: 14px;
+      bottom: 3px;
       top: auto;
       width: 90px;
     }
@@ -55,10 +99,12 @@
     .swiper-button-next {
       text-align: right;
       right: 40px;
+      display: block !important;
     }
 
     .swiper-button-prev {
       left: 40px;
+      display: none;
     }
 
     .swiper-button-next:after {
@@ -66,7 +112,7 @@
       font-size: 18px;
       right: 16px;
       width: 90px;
-      font-family: "Archivo variant1", Tofu;
+      font-family: "Archivo";
     }
 
     .swiper-button-disabled:after {
@@ -77,12 +123,12 @@
       content: "Bỏ qua";
       font-size: 18px;
       right: 16px;
-      font-family: "Archivo variant1", Tofu;
+      font-family: "Archivo";
     }
 
     .swiper-pagination-bullet {
       background-color: #7887ff;
-
+      opacity: 1.5;
       &-active {
         background-color: white;
       }

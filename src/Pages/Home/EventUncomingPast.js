@@ -44,7 +44,7 @@ export default function EventUncomingPast() {
             <WestIcon></WestIcon>Sự kiện
           </Box>
           <Box className="layouttextbutton__button">
-            <Link href="#">
+            <Link href="/">
               <MoreVertIcon></MoreVertIcon>
             </Link>
           </Box>
