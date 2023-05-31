@@ -19,6 +19,8 @@ import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 
+import { Formik } from "formik";
+
 export default function SignUp() {
   const [showPassword, setShowPassword] = React.useState(false);
 
@@ -36,7 +38,7 @@ export default function SignUp() {
         <Box className="event--tablist profiletitle">
           <Box className="layouttextbutton">
             <Box className="layouttextbutton__text">
-              <WestIcon></WestIcon>
+              <Link href="/login"><WestIcon></WestIcon></Link>
             </Box>
           </Box>
         </Box>
@@ -49,99 +51,155 @@ export default function SignUp() {
             Đăng ký
           </Typography>
 
-          <FormControl className="profileedit__itemform loginform__itemform">
-            <Input
-              id="input-with-icon-adornment"
-              placeholder="Họ và tên"
-              variant="outlined"
-              startAdornment={
-                <InputAdornment position="start">
-                  <PermIdentityIcon />
-                </InputAdornment>
+          <Formik
+            initialValues={{ email: "", password: "", name: "", resetpassword: ""}}
+            validate={(values) => {
+              const errors = {};
+              if (!values.email) {
+                errors.email = "Vui lòng nhập Email ";
+              } else if (
+                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+              ) {
+                errors.email = "Email nhập sai định dạng";
               }
-            />
-          </FormControl>
 
-          <FormControl className="profileedit__itemform loginform__itemform">
-            <Input
-              id="input-with-icon-adornment"
-              placeholder="abc@email.com"
-              variant="outlined"
-              startAdornment={
-                <InputAdornment position="start">
-                  <EmailOutlinedIcon />
-                </InputAdornment>
+              if (!values.password) {
+                errors.password = 'Vui lòng nhập Mật khẩu';
               }
-            />
-          </FormControl>
 
-       
+              if (!values.name) {
+                errors.name = 'Vui lòng nhập Họ và tên';
+              }
 
-          <FormControl
-            className="profileedit__itemform loginform__itemform"
-            variant="outlined"
+              if (!values.resetpassword) {
+                errors.resetpassword = 'Vui lòng nhập lại Mật khẩu';
+              }
+
+             
+              return errors;
+            }}
+            onSubmit={(values, { setSubmitting }) => {
+              setTimeout(() => {
+                alert(JSON.stringify(values, null, 2));
+                setSubmitting(false);
+              }, 400);
+            }}
           >
-            <OutlinedInput
-              id="outlined-adornment-password"
-              placeholder="Mật khẩu"
-              type={showPassword ? "text" : "password"}
-              startAdornment={
-                <InputAdornment position="start">
-                  <LockOutlinedIcon />
-                </InputAdornment>
-              }
-              endAdornment={
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword}
-                    onMouseDown={handleMouseDownPassword}
-                    edge="end"
-                  >
-                    {showPassword ? <VisibilityOff /> : <Visibility />}
-                  </IconButton>
-                </InputAdornment>
-              }
-            />
-          </FormControl>
+            {({
+              values,
+              errors,
+              touched,
+              handleChange,
+              handleBlur,
+              handleSubmit,
+              isSubmitting,
+              /* and other goodies */
+            }) => (
+              <form onSubmit={handleSubmit}>
+                <FormControl className="profileedit__itemform loginform__itemform">
+                  <Input
+                    id="input-with-icon-adornment"
+                    placeholder="Họ và tên"
+                    variant="outlined"
+                    startAdornment={
+                      <InputAdornment position="start">
+                        <PermIdentityIcon />
+                      </InputAdornment>
+                    }
+                  />
+                   {errors.name && touched.name && <Box className="profileedit__errors"> {errors.name} </Box>}
+                </FormControl>
 
-          <FormControl
-            className="profileedit__itemform loginform__itemform"
-            variant="outlined"
-          >
-            <OutlinedInput
-              id="outlined-adornment-password"
-              placeholder="Nhập lại mật khẩu"
-              type={showPassword ? "text" : "password"}
-              startAdornment={
-                <InputAdornment position="start">
-                  <LockOutlinedIcon />
-                </InputAdornment>
-              }
-              endAdornment={
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword}
-                    onMouseDown={handleMouseDownPassword}
-                    edge="end"
-                  >
-                    {showPassword ? <VisibilityOff /> : <Visibility />}
-                  </IconButton>
-                </InputAdornment>
-              }
-            />
-          </FormControl>
+                <FormControl className="profileedit__itemform loginform__itemform">
+                  <Input
+                    id="input-with-icon-adornment"
+                    placeholder="abc@email.com"
+                    variant="outlined"
+                    startAdornment={
+                      <InputAdornment position="start">
+                        <EmailOutlinedIcon />
+                      </InputAdornment>
+                    }
+                  />
 
-          <FormControl className="profileedit__itemform loginform__button">
-            <Button
-              className="button"
-              variant="contained"
-              endIcon={<ArrowForwardTwoToneIcon />}
-            >
-              Sign up
-            </Button>
-          </FormControl>
+                  {errors.email && touched.email && <Box className="profileedit__errors"> {errors.email} </Box>}
+                </FormControl>
+
+                <FormControl
+                  className="profileedit__itemform loginform__itemform"
+                  variant="outlined"
+                >
+                  <OutlinedInput
+                    id="outlined-adornment-password"
+                    placeholder="Mật khẩu"
+                    type={showPassword ? "text" : "password"}
+                    startAdornment={
+                      <InputAdornment position="start">
+                        <LockOutlinedIcon />
+                      </InputAdornment>
+                    }
+                    endAdornment={
+                      <InputAdornment position="end">
+                        <IconButton
+                          aria-label="toggle password visibility"
+                          onClick={handleClickShowPassword}
+                          onMouseDown={handleMouseDownPassword}
+                          edge="end"
+                        >
+                          {showPassword ? <VisibilityOff /> : <Visibility />}
+                        </IconButton>
+                      </InputAdornment>
+                    }
+                  />
+
+                  {errors.password && touched.password && <Box className="profileedit__errors"> {errors.password} </Box>}
+                </FormControl>
+
+                <FormControl
+                  className="profileedit__itemform loginform__itemform"
+                  variant="outlined"
+                >
+                  <OutlinedInput
+                    id="outlined-adornment-password"
+                    placeholder="Nhập lại mật khẩu"
+                    type={showPassword ? "text" : "password"}
+                    startAdornment={
+                      <InputAdornment position="start">
+                        <LockOutlinedIcon />
+                      </InputAdornment>
+                    }
+                    endAdornment={
+                      <InputAdornment position="end">
+                        <IconButton
+                          aria-label="toggle password visibility"
+                          onClick={handleClickShowPassword}
+                          onMouseDown={handleMouseDownPassword}
+                          edge="end"
+                        >
+                          {showPassword ? <VisibilityOff /> : <Visibility />}
+                        </IconButton>
+                      </InputAdornment>
+                    }
+                  />
+                   {errors.resetpassword && touched.resetpassword && <Box className="profileedit__errors"> {errors.resetpassword} </Box>}
+                </FormControl>
+
+                <FormControl className="profileedit__itemform loginform__button">
+                  <Button
+                    className="button"
+                 
+
+                    type="submit"
+                    variant="contained"
+                    disabled={isSubmitting}
+                    endIcon={<ArrowForwardTwoToneIcon />}
+                  >
+                    Sign up
+                  </Button>
+                </FormControl>
+              </form>
+            )}
+          </Formik>
         </Box>
       </Box>
       <Box className="login__signwithgg">
@@ -163,7 +221,7 @@ export default function SignUp() {
       </Box>
 
       <Box className="login__footer">
-        Chưa có tài khoản ? <Link href="#">Đăng ký ngay</Link>
+        Chưa có tài khoản ? <Link href="/signup">Đăng ký ngay</Link>
       </Box>
     </Container>
   );

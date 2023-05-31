@@ -73,6 +73,7 @@ margin-top:20px ;
    }
     &__itemform {
         width: 100% !important;
+        margin: 8px !important;
         .MuiOutlinedInput-root {
             border-radius: 12px;
        }
@@ -80,6 +81,12 @@ margin-top:20px ;
        input:-internal-autofill-selected {
         background-color: white !important;
     }
+   }
+   &__errors
+   {
+        color: red;
+        font-size: 15px;
+        margin-top: 10px;
    }
     &__form {
         padding: 0px 20px;

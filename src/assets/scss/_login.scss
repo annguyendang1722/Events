@@ -12,6 +12,59 @@
    }
 }
 .login {
+    &__remember
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // padding:0px 17px;
+    } 
+
+    &__rememberleft
+    {
+        .MuiSwitch-root {
+           
+            width: 65px;
+        }
+        .MuiSwitch-input
+        {
+            height: auto;
+        }
+        .MuiSwitch-track
+        {
+
+            background: #5669FF !important;
+            border-radius: 95px;
+            opacity: 1 !important;
+            height: 23px;
+            margin-top: -4px;
+        
+        }
+        .MuiSwitch-thumb {
+            box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+            background-color: white ;
+            width: 20px;
+            height: 20px;
+            margin-left: -31px;
+            border-radius: 50%;
+            left: 0;
+        }
+    }
+    &__rememberight
+    {
+        margin-right: -5px;
+       a 
+       {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 23px;
+        color: #120D26;
+        text-decoration: none;
+       }
+    }
+
+
     &__footer {
         color:black;
         font-style: italic;

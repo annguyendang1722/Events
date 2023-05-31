@@ -165,6 +165,10 @@
   color: black;
   font-size: 18px;
 }
+.layouttextbutton__text a {
+  margin-left: 5px;
+  color: black;
+}
 .layouttextbutton__button a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1118,12 +1122,18 @@
 }
 .profileedit__itemform {
   width: 100% !important;
+  margin: 8px !important;
 }
 .profileedit__itemform .MuiOutlinedInput-root {
   border-radius: 12px;
 }
 .profileedit__itemform input:-internal-autofill-selected {
   background-color: white !important;
+}
+.profileedit__errors {
+  color: red;
+  font-size: 15px;
+  margin-top: 10px;
 }
 .profileedit__form {
   padding: 0px 20px;
@@ -1246,6 +1256,51 @@
   margin-top: 15px;
 }
 
+.login__remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.login__rememberleft .MuiSwitch-root {
+  width: 65px;
+}
+.login__rememberleft .MuiSwitch-input {
+  height: auto;
+}
+.login__rememberleft .MuiSwitch-track {
+  background: #5669FF !important;
+  border-radius: 95px;
+  opacity: 1 !important;
+  height: 23px;
+  margin-top: -4px;
+}
+.login__rememberleft .MuiSwitch-thumb {
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  margin-left: -31px;
+  border-radius: 50%;
+  left: 0;
+}
+.login__rememberight {
+  margin-right: -5px;
+}
+.login__rememberight a {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 23px;
+  color: #120D26;
+  text-decoration: none;
+}
 .login__footer {
   color: black;
   font-style: italic;
