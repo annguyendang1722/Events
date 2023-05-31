@@ -1,5 +1,69 @@
 .addevent {
     padding-top: 36px;
+
+
+    &__notification
+    {
+      .addevent__listtext
+      {
+        display: flex;
+        align-items: center;
+        max-width: 55%;
+        flex-basis: 55%;
+       
+        span 
+        {
+          margin-bottom: 0px;
+          line-height: 15px;
+        }
+        p span 
+        {
+          margin-right: 5px;
+        }
+      }
+
+
+      .addevent__time
+      {
+      font-style: italic;
+      font-weight: 100;
+      font-size: 12px;
+      line-height: 13px;
+      text-align: right;
+      color: #3C3E56;
+      position: absolute;
+      right: 15px;
+      top: 22px;
+      }
+
+      .addevent__item  
+      {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+      .addevent__listbutton  
+      {
+        flex-basis: 100%;
+        max-width: 100%;
+        display: flex;
+        padding-left: 54px;
+        button
+        {
+          font-weight: 100 !important;
+        }
+        .missus  
+        {
+          border: 1px solid #EEEEEE;
+          border-radius: 6px !important; 
+          margin-right: 13px;
+          color: #706D6D;
+        }
+      }
+    }
+
+
+
     &__input {
       padding: 0px 24px;
       textarea {

@@ -19,6 +19,9 @@ import Verification from "./Pages/Authentication/Verification.tsx";
 import ResetPassword from "./Pages/Authentication/ResetPassword.tsx";
 import SelectLocation from "./Pages/Authentication/SelectLocation";
 import SearchPage from "./Pages/TimKiem/SearchPage";
+import Notification from "./Pages/TimKiem/Notification.tsx";
+
+
 import SelectInterest from "./Pages/Authentication/SelectInterest";
 
 import AddEvent from "./Pages/TaoSuKien/AddEvent.tsx";
@@ -38,6 +41,9 @@ import CovidDeclaration from "./Pages/DangKyThamGiaSuKien/CovidDeclaration.tsx";
 import Payment from "./Pages/DangKyThamGiaSuKien/Payment.tsx";
 import EventReminder from "./Pages/DangKyThamGiaSuKien/EventReminder.tsx";
 import EventReviewPopup from "./Pages/DangKyThamGiaSuKien/EventReviewPopup.tsx";
+
+
+
 
 import "./assets/css/styles.css";
 
@@ -72,7 +78,9 @@ export default function App() {
         <Route path='resetpassword' element={<ResetPassword />} />  
         <Route path='selectlocation' element={<SelectLocation />} />  
         
-        <Route path='searchpage' element={<SearchPage />} />       
+        <Route path='searchpage' element={<SearchPage />} />     
+        <Route path='notification' element={<Notification />} /> 
+          
   
         <Route path='selectinterest' element={<SelectInterest />} />   
         

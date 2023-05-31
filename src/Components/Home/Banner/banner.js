@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import Typography from "@mui/material/Typography";
 
 import "swiper/css";
-import { Link } from "react-router-dom";
+import Link from "@mui/material/Link";
 
 export default function Banner() {
 
@@ -37,7 +37,7 @@ export default function Banner() {
       <div className="layouttextbutton">
         <div className="layouttextbutton__text">Gần bạn nhất</div>
         <div className="layouttextbutton__button">
-          <Link href="#"><em>Xem tất cả</em><ArrowRightIcon></ArrowRightIcon></Link>
+        <Link href="/eventuncomingpast"><em>Xem tất cả</em><ArrowRightIcon></ArrowRightIcon></Link>
         </div>
       </div>
     </div>

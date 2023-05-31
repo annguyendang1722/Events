@@ -11,7 +11,6 @@ import Button from "@mui/material/Button";
 
 import IconButton from "@mui/material/IconButton";
 import Paper from "@mui/material/Paper";
-import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 

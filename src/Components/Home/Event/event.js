@@ -10,7 +10,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import "swiper/css";
-import { Link } from "react-router-dom";
+import Link from "@mui/material/Link";
 
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
@@ -22,7 +22,7 @@ export default function Events() {
       <Box className="layouttextbutton">
         <Box className="layouttextbutton__text">Sự kiện sắp tới</Box>
         <Box className="layouttextbutton__button">
-          <Link href="#">
+          <Link href="/eventuncomingpast">
             <em>Xem tất cả</em>
             <ArrowRightIcon></ArrowRightIcon>
           </Link>

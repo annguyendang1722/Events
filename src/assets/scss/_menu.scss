@@ -163,6 +163,15 @@
             font-size: 12px;
             margin-left: 5px;
        }
+       a {
+        span:last-child
+        {
+            font-style: italic;
+            font-size: 12px;
+            margin-left: 5px;
+            color: white;
+        }
+       }
    }
     &__searchleft {
         max-width: 77%;

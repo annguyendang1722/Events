@@ -434,7 +434,7 @@
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   top: auto;
-  bottom: 40px;
+  bottom: 48px;
   width: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,11 +465,17 @@
       flex-shrink: 0;
   min-height: 3.25rem;
   padding: 20px 10px 20px 10px;
+  padding-bottom: 0px;
+  padding-top: 10px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   z-index: 9999;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (min-width: 598px) {
   .footerhome__menu {
@@ -483,11 +489,63 @@
   -webkit-transition: unset !important;
   transition: unset !important;
   padding-top: 0px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  max-width: 25%;
+}
+.footerhome__item > a {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  text-decoration: none;
+  padding: 0px 12px;
+  min-width: 80px;
+  max-width: 168px;
 }
 .footerhome__item.Mui-selected {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.footerhome__item.Mui-selected p {
+  color: rgb(86, 105, 255);
 }
 .footerhome__item:nth-child(1), .footerhome__item:nth-child(2) {
   text-align: left;
@@ -497,9 +555,13 @@
 }
 .footerhome__item svg {
   margin: 0 auto;
-  font-size: 20px !important;
+  font-size: 25px !important;
   min-height: 24px;
   margin-bottom: 5px;
+  color: #DADADA;
+}
+.footerhome__item svg path {
+  fill: #DADADA;
 }
 .footerhome__item a {
   display: -webkit-box;
@@ -744,6 +806,12 @@
   font-style: italic;
   font-size: 12px;
   margin-left: 5px;
+}
+.header__searchright a span:last-child {
+  font-style: italic;
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
 }
 .header__searchleft {
   max-width: 77%;
@@ -1489,6 +1557,60 @@
 
 .addevent {
   padding-top: 36px;
+}
+.addevent__notification .addevent__listtext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 55%;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+.addevent__notification .addevent__listtext span {
+  margin-bottom: 0px;
+  line-height: 15px;
+}
+.addevent__notification .addevent__listtext p span {
+  margin-right: 5px;
+}
+.addevent__notification .addevent__time {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: right;
+  color: #3C3E56;
+  position: absolute;
+  right: 15px;
+  top: 22px;
+}
+.addevent__notification .addevent__item {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.addevent__notification .addevent__listbutton {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 54px;
+}
+.addevent__notification .addevent__listbutton button {
+  font-weight: 100 !important;
+}
+.addevent__notification .addevent__listbutton .missus {
+  border: 1px solid #EEEEEE;
+  border-radius: 6px !important;
+  margin-right: 13px;
+  color: #706D6D;
 }
 .addevent__input {
   padding: 0px 24px;
@@ -2893,6 +3015,23 @@
   background-color: white;
   border-radius: 20px;
   max-width: 90%;
+}
+
+.notification .layouttextbutton {
+  padding-left: 17px;
+}
+.notification .layouttextbutton__text {
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.notification .layouttextbutton__text svg {
+  margin-right: 10px;
+  font-size: 20px;
 }
 
 html, body {

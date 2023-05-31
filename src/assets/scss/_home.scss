@@ -331,7 +331,7 @@
     z-index: 99999;
     transform: translate(-50%, 0);
     top: auto;
-    bottom: 40px;
+    bottom: 48px;
     width: 30px;
     display: flex;
     height: 30px;
@@ -353,12 +353,17 @@
     flex-shrink: 0;
     min-height: 3.25rem;
     padding: 20px 10px 20px 10px;
-
+    padding-bottom: 0px;
+    padding-top: 10px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     z-index: 9999;
+
+
+    display: flex;
+    justify-content: center;
     @media(min-width:598px)
     {
       transform: translateX(-50%);
@@ -371,9 +376,50 @@
   &__item {
     transition: unset !important;
     padding-top: 0px !important;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 25%;
+    max-width: 25%;
+    > a 
+    {
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      position: relative;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      margin: 0;
+      border-radius: 0;
+      cursor: pointer;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      vertical-align: middle;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      text-decoration: none;
+      padding: 0px 12px;
+      min-width: 80px;
+      max-width: 168px;
+    }
     &.Mui-selected {
       justify-content: center;
+      p 
+      {
+        color: rgb(86, 105, 255);
+      }
     }
 
     &:nth-child(1), &:nth-child(2) {
@@ -386,9 +432,14 @@
 
     svg {
       margin: 0 auto;
-      font-size: 20px !important;
+      font-size: 25px !important;
       min-height: 24px;
       margin-bottom: 5px;
+      color: #DADADA;
+      path 
+      {
+        fill: #DADADA;
+      }
     }
 
     a {
