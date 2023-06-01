@@ -176,6 +176,11 @@
     &__searchleft {
         max-width: 77%;
         flex-basis: 77%;
+        @media(max-width:360px)
+        {
+            max-width: 73%;
+            flex-basis: 73%;
+        }
    }
     &__home {
         width: 100%;

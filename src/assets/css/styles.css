@@ -507,6 +507,13 @@
       flex-basis: 25%;
   max-width: 25%;
 }
+.footerhome__item:hover a, .footerhome__item:hover svg, .footerhome__item:hover p, .footerhome__item:hover path, .footerhome__item:active a, .footerhome__item:active svg, .footerhome__item:active p, .footerhome__item:active path, .footerhome__item:focus a, .footerhome__item:focus svg, .footerhome__item:focus p, .footerhome__item:focus path {
+  color: rgb(86, 105, 255);
+  fill: rgb(86, 105, 255);
+}
+.footerhome__item a:hover, .footerhome__item svg:hover {
+  color: rgb(86, 105, 255);
+}
 .footerhome__item > a {
   font-family: inherit;
   font-weight: inherit;
@@ -821,6 +828,13 @@
   max-width: 77%;
   -ms-flex-preferred-size: 77%;
       flex-basis: 77%;
+}
+@media (max-width: 360px) {
+  .header__searchleft {
+    max-width: 73%;
+    -ms-flex-preferred-size: 73%;
+        flex-basis: 73%;
+  }
 }
 .header__home {
   width: 100%;

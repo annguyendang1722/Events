@@ -386,6 +386,18 @@
     flex-direction: column;
     flex-basis: 25%;
     max-width: 25%;
+    &:hover,&:active,&:focus
+    {
+      a,svg ,p,path
+      {
+        color:rgb(86, 105, 255);
+        fill:rgb(86, 105, 255);
+      }
+    }
+    a:hover,svg:hover 
+    {
+      color:rgb(86, 105, 255);
+    }
     > a 
     {
       font-family: inherit;
