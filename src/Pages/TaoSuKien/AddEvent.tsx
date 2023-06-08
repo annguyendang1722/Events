@@ -14,7 +14,7 @@ const AddEvent = () => {
       <Box className="layouttextbutton addevent__layouttextbutton">
         <Box className="layouttextbutton__text">Tạo sự kiện mới</Box>
         <Box className="layouttextbutton__button">
-          <Button variant="contained">Tiếp</Button>
+          <Button href="/eventsubmit" variant="contained">Tiếp</Button>
         </Box>
       </Box>
       <Box className="addevent__input">

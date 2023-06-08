@@ -242,7 +242,7 @@ export default function SelectInterest() {
         </BottomNavigation>
 
         <FormControl className="selectinterest__submit">
-          <Button variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
+          <Button href="/selectlocation" variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
           Tiếp
           </Button>
         </FormControl>

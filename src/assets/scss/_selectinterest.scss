@@ -80,9 +80,9 @@
     transform: translateX(-50%);
     bottom: 35px;
     z-index: 999;
-    button 
+    button ,a
     {
-      background: #5669FF;
+    background: #5669FF;
     width: 270px;
     margin: 0 auto;
     margin-top: 20px;
@@ -92,6 +92,11 @@
     font-size: 16px;
     line-height: 17px;
     padding: 13px 20px;
+      &:hover 
+      {
+        background-color: #ADADB8;
+        color:white;
+      }
     }
 
     .MuiButton-endIcon {

@@ -9,6 +9,7 @@ import ArrowForwardTwoToneIcon from "@mui/icons-material/ArrowForwardTwoTone";
 import Input from "@mui/material/Input";
 import InputAdornment from "@mui/material/InputAdornment";
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
 
 import { Formik } from "formik";
 
@@ -19,7 +20,7 @@ export default function ResetPassword() {
         <Box className="event--tablist profiletitle">
           <Box className="layouttextbutton">
             <Box className="layouttextbutton__text">
-              <WestIcon></WestIcon>
+              <Link href="/verification"><WestIcon></WestIcon></Link>
             </Box>
           </Box>
         </Box>

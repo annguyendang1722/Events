@@ -36,7 +36,7 @@ export default function ProfileEdit() {
       <Box className="event--tablist profiletitle">
         <Box className="layouttextbutton">
           <Box className="layouttextbutton__text">
-            <WestIcon></WestIcon>Sửa Profile
+            <Link href="/profile"><WestIcon></WestIcon>Sửa Profile </Link>
           </Box>
           <Box className="layouttextbutton__button">
             <Link href="#">
@@ -96,7 +96,7 @@ export default function ProfileEdit() {
             <TextField id="outlined-basic" variant="outlined" />
           </FormControl>
           <FormControl className="profileedit__itemform">
-            <Button className="button" variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
+            <Button href="/profile" className="button" variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
               Lưu
             </Button>
           </FormControl>

@@ -16,7 +16,7 @@ export default function Verification() {
         <Box className="event--tablist profiletitle">
           <Box className="layouttextbutton">
             <Box className="layouttextbutton__text">
-              <WestIcon></WestIcon>
+              <Link href="/login"><WestIcon></WestIcon></Link>
             </Box>
           </Box>
         </Box>
@@ -47,7 +47,7 @@ export default function Verification() {
           </FormControl>
 
           <FormControl className="profileedit__itemform loginform__button">
-            <Button className="button" variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
+            <Button className="button" href="/resetpassword" variant="contained" endIcon={<ArrowForwardTwoToneIcon />}>
               Tiếp tục
             </Button>
           </FormControl>

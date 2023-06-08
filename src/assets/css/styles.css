@@ -452,6 +452,15 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.footerhome__circle a {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .footerhome__circle svg {
   font-size: 20px;
 }
@@ -1184,6 +1193,10 @@
   line-height: 17px;
   padding: 13px 20px;
 }
+.profileedit__form .button:hover {
+  background: #5669FF;
+  color: white;
+}
 .profileedit__form .button .MuiButton-endIcon {
   position: absolute;
   right: 10px;
@@ -1197,12 +1210,12 @@
           justify-content: center;
   margin-top: 21px;
 }
-.profileedit__listbutton--1 button {
+.profileedit__listbutton--1 button, .profileedit__listbutton--1 a {
   border: 1.5px solid #5669FF;
   color: #5669FF;
   background-color: white !important;
 }
-.profileedit__listbutton button {
+.profileedit__listbutton button, .profileedit__listbutton a {
   border-radius: 10px;
   font-style: italic;
   font-weight: 100;
@@ -1210,10 +1223,10 @@
   font-size: 16px;
   text-transform: inherit;
 }
-.profileedit__listbutton button:nth-child(1) {
+.profileedit__listbutton button:nth-child(1), .profileedit__listbutton a:nth-child(1) {
   background: #5669FF;
 }
-.profileedit__listbutton button:nth-child(2) {
+.profileedit__listbutton button:nth-child(2), .profileedit__listbutton a:nth-child(2) {
   border: 1.5px solid #5669FF;
   color: #5669FF;
 }
@@ -1504,18 +1517,36 @@
           box-shadow: unset;
 }
 .searchmap__iconend {
-  background: white;
-  border-radius: 12px;
-  padding: 13px 13px;
-  margin-left: 10px;
+  background: white !important;
+  border-radius: 12px !important;
+  padding: 13px 13px !important;
+  margin-left: 10px !important;
 }
 
-.mapview __button {
-  position: absolute;
-  bottom: 35px;
+.mapview .loginform__button {
+  position: fixed !important;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  bottom: 35px;
+  z-index: 999;
+}
+.mapview .loginform__button button, .mapview .loginform__button a {
+  background: #5669FF;
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 10px 35px rgba(111, 126, 201, 0.25);
+          box-shadow: 0px 10px 35px rgba(111, 126, 201, 0.25);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  padding: 13px 20px;
+}
+.mapview .loginform__button button:hover, .mapview .loginform__button a:hover {
+  background-color: #5669FF;
+  color: white;
 }
 
 .selectinterest {
@@ -1603,7 +1634,7 @@
   bottom: 35px;
   z-index: 999;
 }
-.selectinterest__submit button {
+.selectinterest__submit button, .selectinterest__submit a {
   background: #5669FF;
   width: 270px;
   margin: 0 auto;
@@ -1615,6 +1646,10 @@
   font-size: 16px;
   line-height: 17px;
   padding: 13px 20px;
+}
+.selectinterest__submit button:hover, .selectinterest__submit a:hover {
+  background-color: #ADADB8;
+  color: white;
 }
 .selectinterest__submit .MuiButton-endIcon {
   position: absolute;
@@ -1753,13 +1788,17 @@
   padding-left: 24px;
   padding-right: 24px;
 }
-.addevent__layouttextbutton button {
+.addevent__layouttextbutton button, .addevent__layouttextbutton a {
   background: #5669ff;
   border-radius: 100px;
   font-weight: 500;
   font-size: 13px;
   line-height: 14px;
   padding: 10px 28px;
+}
+.addevent__layouttextbutton button:hover, .addevent__layouttextbutton a:hover {
+  color: white;
+  background: #5669ff;
 }
 .addevent__menu .MuiDrawer-paper {
   background-color: #fff;
@@ -1887,9 +1926,17 @@
   text-transform: inherit;
   padding: 8px;
 }
-.addevent__listitem--details .followblue {
+.addevent__listitem--details .followblue, .addevent__listitem--details a.followblue {
   color: white;
   background: #5669FF;
+}
+.addevent__listitem--details a.followblue {
+  width: auto;
+  border-radius: 7px !important;
+  font-size: 12px !important;
+  font-weight: 100 !important;
+  font-style: italic;
+  text-transform: inherit !important;
 }
 .addevent__listitem--details .unfollow {
   background: rgba(240, 99, 90, 0.12);
@@ -2076,6 +2123,13 @@
 }
 .addevent__bannereventdetails {
   position: relative;
+}
+.addevent__bannereventdetails .layouttextbutton__text > a {
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding-left: 0px;
+  margin-left: 0px;
 }
 .addevent__bannereventdetails .addevent__listimg {
   position: absolute;

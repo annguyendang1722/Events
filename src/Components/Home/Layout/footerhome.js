@@ -15,7 +15,7 @@ export default function Footerhome() {
   return (
    <Box className="footerhome">
         <Box className="footerhome__circle"> 
-            <AddCircleIcon />
+          <Link href="/addevent"><AddCircleIcon /></Link>
         </Box>
         <Box className='footerhome__menu'>
           <Box className='footerhome__item Mui-selected'>

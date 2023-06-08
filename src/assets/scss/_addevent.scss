@@ -124,8 +124,13 @@
     &__layouttextbutton {
       padding-left: 24px;
       padding-right: 24px;
-      button {
+      button,a {
         background: #5669ff;
+        &:hover 
+        {
+          color: white;
+          background: #5669ff;
+        }
         border-radius: 100px;
         font-weight: 500;
         font-size: 13px;
@@ -280,9 +285,18 @@
           text-transform: inherit;
           padding: 8px;
         }
-        .followblue 
+        .followblue ,a.followblue
         {
           color: white;background: #5669FF;
+        }
+        a.followblue 
+        {
+          width: auto;
+          border-radius: 7px !important;
+          font-size: 12px !important;
+          font-weight: 100 !important;
+          font-style: italic;
+          text-transform: inherit !important;
         }
         .unfollow 
         {
@@ -473,6 +487,14 @@ color: #120D26;
     &__bannereventdetails
     {
       position: relative;
+      .layouttextbutton__text  > a 
+      {
+        background-color: transparent;
+        color: white;
+        font-size: 18px;
+        padding-left: 0px;
+        margin-left: 0px;
+      }
        .addevent
        {
         &__listimg

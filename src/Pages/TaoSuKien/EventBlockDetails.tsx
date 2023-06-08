@@ -13,6 +13,7 @@ import WestIcon from "@mui/icons-material/West";
 
 import Typography from "@mui/material/Typography";
 
+import Link from "@mui/material/Link";
 
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
@@ -22,8 +23,8 @@ const EventBlockDetails = () => {
     <Container className="addevent addevent--details" maxWidth="sm">
       <Box className="addevent__bannereventdetails">
         <Box className="layouttextbutton addevent__layouttextbutton">
-          <Box className="layouttextbutton__text">
-            <WestIcon></WestIcon>Chi tiết sự kiện
+          <Box className="layouttextbutton__text">            
+            <Link href="/eventsubmit"><WestIcon></WestIcon>Chi tiết sự kiện</Link>
           </Box>
           <Box className="layouttextbutton__button">
             <BookmarkIcon></BookmarkIcon>
@@ -320,7 +321,7 @@ const EventBlockDetails = () => {
               />
             </AvatarGroup>
           </ListItemAvatar>
-          <Button variant="contained" className="followblue">
+          <Button variant="contained" href="/invitefriend" className="followblue">
             Mời
           </Button>
         </ListItem>

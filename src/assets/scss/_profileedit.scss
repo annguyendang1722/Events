@@ -112,6 +112,11 @@ margin-top:20px ;
      
         .button {
             background: #5669FF;
+            &:hover 
+            {
+                background: #5669FF;
+                color:white;
+            }
             width: 270px;
             margin: 0 auto;
             margin-top: 20px;
@@ -137,14 +142,14 @@ margin-top:20px ;
     margin-top: 21px;
     &--1 
     {
-        button 
+        button ,a
         {
             border: 1.5px solid #5669FF;
             color: #5669FF;
             background-color: white !important;
         }
     }
-    button 
+    button,a 
     {
         border-radius: 10px;
         font-style: italic;

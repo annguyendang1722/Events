@@ -41,7 +41,7 @@ export default function EventUncomingPast() {
       <Box className="event--tablist">
         <Box className="layouttextbutton">
           <Box className="layouttextbutton__text">
-            <WestIcon></WestIcon>Sự kiện
+            <Link href="/"><WestIcon></WestIcon>Sự kiện </Link>
           </Box>
           <Box className="layouttextbutton__button">
             <Link href="/">

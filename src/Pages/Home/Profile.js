@@ -19,7 +19,7 @@ export default function Profile() {
       <Box className="event--tablist profiletitle">
         <Box className="layouttextbutton">
           <Box className="layouttextbutton__text">
-            <WestIcon></WestIcon>Profile
+            <Link href="/"><WestIcon></WestIcon>Profile </Link>
           </Box>
           <Box className="layouttextbutton__button">
             <Link href="#">
@@ -59,6 +59,7 @@ export default function Profile() {
           spacing={2}
         >
           <Button
+          href="/profileedit"
             variant="outlined"
             startIcon={
               <svg
