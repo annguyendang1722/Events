@@ -109,8 +109,6 @@ export default function Login() {
                     }
                   />
 
-                 
-                  
                   {errors.email && touched.email && <Box className="profileedit__errors"> {errors.email} </Box>}
                  
                 </FormControl>
