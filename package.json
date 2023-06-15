@@ -12,8 +12,10 @@
     "@mui/x-date-pickers": "^6.1.0",
     "@mui/x-date-pickers-pro": "^6.1.0",
     "dayjs": "^1.11.7",
+    "formik": "^2.2.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9",
     "react-router-dom": "6.10.0",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.9",
@@ -28,7 +30,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  
   "browserslist": [
     ">0.2%",
     "not dead",
